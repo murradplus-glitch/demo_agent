@@ -1,0 +1,3 @@
+cnic,triage_case_id,name,city,district,province,area,rural_or_urban,family_size,income_per_month_pkrs,nser_score,sehat_card_eligible,notes
+12345-1234567-1,1,Ali Khan,Lahore,Lahore,Punjab,Model Town,Urban,5,45000,24,Yes,"Prefers Urdu for communication; already enrolled in Sehat Sahulat."
+54321-7654321-0,2,Ayesha Bibi,Rawalpindi,Rawalpindi,Punjab,Saddar,Urban,4,92000,47,No,"Household recently moved from Taxila; waiting for NSER reassessment."
