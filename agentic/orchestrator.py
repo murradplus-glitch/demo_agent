@@ -32,6 +32,8 @@ class HealthcareMultiAgentReport:
     citizen_profile: dict[str, Any]
     rag_context: dict[str, Any]
     workflow_backend: str
+    user_summary: str
+    citizen_response: str
     triage: AgentOutput
     program_eligibility: AgentOutput
     facility_finder: AgentOutput
@@ -46,6 +48,8 @@ class HealthcareMultiAgentReport:
                 "citizen_profile": self.citizen_profile,
                 "rag_context": self.rag_context,
                 "workflow_backend": self.workflow_backend,
+                "user_summary": self.user_summary,
+                "citizen_response": self.citizen_response,
                 "triage": asdict(self.triage),
                 "program_eligibility": asdict(self.program_eligibility),
                 "facility_finder": asdict(self.facility_finder),
@@ -160,11 +164,15 @@ class HealthcareMultiAgentSystem:
         assert final_state.triage and final_state.program_eligibility
         assert final_state.facility_finder and final_state.follow_up
         assert final_state.health_analytics and final_state.knowledge
+        friendly_summary = self._compose_user_friendly_summary(final_state)
+        structured_response = self._compose_structured_response(final_state)
         return HealthcareMultiAgentReport(
             patient_query=patient_query,
             citizen_profile=profile,
             rag_context=self.rag.describe(),
             workflow_backend=self.workflow_backend,
+            user_summary=friendly_summary,
+            citizen_response=structured_response,
             triage=final_state.triage,
             program_eligibility=final_state.program_eligibility,
             facility_finder=final_state.facility_finder,
@@ -384,3 +392,159 @@ class HealthcareMultiAgentSystem:
 
     def _retrieve_context(self, patient_query: str) -> RetrievedContext:
         return self.rag.retrieve(patient_query, top_k=self.settings.top_k)
+
+    def _compose_user_friendly_summary(self, state: HealthcareGraphState) -> str:
+        """Condense the multi-agent output into 2–3 conversational sentences."""
+
+        triage_meta = state.triage.metadata if state.triage else {}
+        facility_meta = state.facility_finder.metadata if state.facility_finder else {}
+        program_meta = state.program_eligibility.metadata if state.program_eligibility else {}
+        follow_up_meta = state.follow_up.metadata if state.follow_up else {}
+
+        sentences: list[str] = []
+
+        severity_sentence = self._build_severity_sentence(triage_meta)
+        if severity_sentence:
+            sentences.append(severity_sentence)
+
+        facility_sentence = self._build_facility_sentence(
+            facility_meta,
+            state.citizen_profile,
+            triage_meta.get("severity"),
+        )
+        if facility_sentence:
+            sentences.append(facility_sentence)
+
+        eligibility_sentence = self._build_eligibility_sentence(program_meta)
+        if eligibility_sentence:
+            sentences.append(eligibility_sentence)
+
+        follow_up_sentence = self._build_follow_up_sentence(follow_up_meta)
+        if follow_up_sentence:
+            sentences.append(follow_up_sentence)
+
+        trimmed = [sentence.strip() for sentence in sentences if sentence.strip()][:3]
+        combined = " ".join(trimmed)
+        combined = " ".join(combined.split())  # collapse whitespace
+        return combined or "Keep monitoring your symptoms and share more details so I can guide you."
+
+    def _compose_structured_response(self, state: HealthcareGraphState) -> str:
+        """Return the citizen-facing markdown message that mirrors the SOP layout."""
+
+        triage_meta = state.triage.metadata if state.triage else {}
+        severity = str(triage_meta.get("severity") or "").lower()
+        facility_meta = state.facility_finder.metadata if state.facility_finder else {}
+
+        sections: list[str] = []
+        if severity == "emergency":
+            sections.append(
+                "⛔ **Possible emergency**\n"
+                "These symptoms can be dangerous. Call 1122 or reach the nearest hospital emergency right now."
+            )
+
+        triage_text = self._safe_agent_summary(
+            state.triage,
+            "I need a few more symptom details (duration, fever, bleeding, breathing) to triage you safely.",
+        )
+        sections.append(f"**Triage result**\n{triage_text}")
+
+        eligibility_text = self._safe_agent_summary(
+            state.program_eligibility,
+            "Share your family size, city, and income range so I can estimate Sehat Card support.",
+        )
+        sections.append(f"**Sehat Card / subsidy check**\n{eligibility_text}")
+
+        if facility_meta.get("needs_city"):
+            facility_text = "Tell me your city or town so I can list BHUs, RHCs, or hospitals nearby."
+        else:
+            facility_text = self._safe_agent_summary(
+                state.facility_finder,
+                "Start with your nearest BHU/clinic for assessment, and escalate to a hospital if danger signs appear.",
+            )
+        sections.append(f"**Where you can go**\n{facility_text}")
+
+        if severity == "emergency":
+            follow_up_text = "No reminder now—focus on emergency care and keep us updated once you’re safe."
+        else:
+            follow_up_text = self._safe_agent_summary(
+                state.follow_up,
+                "I can schedule a gentle reminder once you confirm how you're feeling after the visit.",
+            )
+        sections.append(f"**Follow-up**\n{follow_up_text}")
+
+        return "\n\n".join(section.strip() for section in sections if section.strip())
+
+    def _safe_agent_summary(
+        self, agent_output: AgentOutput | None, fallback: str
+    ) -> str:
+        if agent_output and agent_output.summary and agent_output.summary.strip():
+            return agent_output.summary.strip()
+        return fallback
+
+    def _build_severity_sentence(self, triage_meta: dict[str, Any]) -> str:
+        severity = str(triage_meta.get("severity") or "").strip()
+        recommended = str(triage_meta.get("recommended_action") or "").strip()
+        severity_map = {
+            "emergency": "This sounds like a possible emergency—head to the nearest emergency department or call 1122.",
+            "hospital": "A hospital evaluation is safer so a doctor can examine you in person soon.",
+            "bhu visit": "Plan a BHU or clinic visit soon so a clinician can check you properly.",
+            "self-care": "It appears mild right now; continue home care but monitor for any danger signs.",
+        }
+        normalized = severity.lower()
+        sentence = severity_map.get(normalized)
+        if not sentence and severity:
+            sentence = f"This appears to need a {severity.lower()} level response, so please seek care accordingly."
+        if not sentence:
+            sentence = "Keep monitoring your symptoms and seek professional care if they worsen."
+        if recommended:
+            trimmed = recommended.rstrip(". ")
+            if trimmed and trimmed.lower() not in sentence.lower():
+                sentence = f"{sentence.rstrip('.')} ({trimmed})."
+        return sentence
+
+    def _build_facility_sentence(
+        self,
+        facility_meta: dict[str, Any],
+        profile: dict[str, Any],
+        severity: str | None,
+    ) -> str:
+        if facility_meta.get("needs_city"):
+            return "Tell me your city or town so I can list the nearest BHU or hospital."
+        facilities = facility_meta.get("facility_options") or facility_meta.get("facilities") or []
+        severity_normalized = (severity or "").lower()
+        if facilities:
+            top = facilities[0]
+            location_bits = [part for part in [top.get("area"), top.get("city")] if part]
+            location = ", ".join(location_bits)
+            prefix = "Head straight to" if severity_normalized == "emergency" else "You can start at"
+            sentence = f"{prefix} {top.get('name', 'a nearby facility')}"
+            if location:
+                sentence += f" in {location}"
+            sentence += " for an in-person check."
+            return sentence
+        if severity_normalized == "emergency":
+            return "Go to the closest emergency department or call 1122 immediately."
+        if profile.get("city"):
+            return f"Visit a BHU or clinic in {profile['city']} so a nurse or doctor can review you."
+        return ""
+
+    def _build_eligibility_sentence(self, program_meta: dict[str, Any]) -> str:
+        decision = program_meta.get("eligibility") or {}
+        eligible_value = str(decision.get("eligible") or "").strip().lower()
+        reason = str(decision.get("reason") or "").strip().rstrip(".")
+        if eligible_value == "yes":
+            detail = f" – {reason}" if reason else ""
+            return f"You're likely eligible for Sehat Card support{detail}."
+        if eligible_value == "no":
+            detail = f" – {reason}" if reason else ""
+            return f"Sehat Card support may not apply yet{detail}; still bring your CNIC in case the clinic can re-check."
+        return ""
+
+    def _build_follow_up_sentence(self, follow_up_meta: dict[str, Any]) -> str:
+        plan = follow_up_meta.get("follow_up_plan") or {}
+        reminders = plan.get("reminders") if isinstance(plan, dict) else None
+        if reminders:
+            first = str(reminders[0]).rstrip(". ")
+            if first:
+                return f"I'll nudge you to {first.lower()} and check back if things worsen."
+        return ""

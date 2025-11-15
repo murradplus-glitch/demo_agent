@@ -198,6 +198,14 @@ def _render_report() -> None:
     if not report:
         return
     st.divider()
+    summary = (report.get("user_summary") or "").strip()
+    if summary:
+        st.markdown("### Quick take")
+        st.success(summary)
+    citizen_response = (report.get("citizen_response") or "").strip()
+    if citizen_response:
+        st.markdown("### SehatBuddy response")
+        st.markdown(citizen_response)
     st.markdown("### Agent responses")
     st.caption(f"Workflow backend: {report.get('workflow_backend')}")
     _agent_sections = {
