@@ -1,0 +1,193 @@
+Triage Agent Knowledge Base Preview:
+Case 1:
+Symptoms (English): High fever and difficulty breathing
+Symptoms (Urdu): Zyada bukhar aur saans lene mein mushkil
+Severity: Emergency
+Next Step (English): Possible severe infection; go to emergency
+Next Step (Urdu): Possible severe infection; go to emergency
+Case 2:
+Symptoms (English): Sore throat and slight fever
+Symptoms (Urdu): Gale mein kharash aur halka bukhar
+Severity: Self-care
+Next Step (English): Warm fluids and rest
+Next Step (Urdu): Warm fluids and rest
+Case 3:
+Symptoms (English): Headache and runny nose
+Symptoms (Urdu): Sar dard aur naak behna
+Severity: Self-care
+Next Step (English): Common cold; self-care at home
+Next Step (Urdu): Common cold; self-care at home
+Case 4:
+Symptoms (English): Mild fever and cough
+Symptoms (Urdu): Halka bukhar aur khansi
+Severity: Self-care
+Next Step (English): Rest, hydration and over‑the‑counter medications
+Next Step (Urdu): Rest, hydration and over‑the‑counter medications
+Case 5:
+Symptoms (English): Severe abdominal pain and vomiting blood
+Symptoms (Urdu): Shadeed pait dard aur khoon ki ulti
+Severity: Emergency
+Next Step (English): Emergency; possible internal bleeding
+Next Step (Urdu): Emergency; possible internal bleeding
+Case 6: ● Symptoms (English): Chest pain and shortness of breath
+● Symptoms (Urdu): Seena dard aur saans lene mein mushkil
+● Severity: Emergency
+● Next Step (English): Possible heart attack; go to emergency immediately
+● Next Step (Urdu): Mumkin hai ke dil ka daura ho; foran emergency mein jaayein
+Case 7: ● Symptoms (English): Persistent headache and vision changes
+● Symptoms (Urdu): Musalsal sar dard aur nazar mein tabdeeli
+● Severity: Emergency
+● Next Step (English): Possible stroke; seek immediate medical attention
+● Next Step (Urdu): Mumkin hai ke stroke ho; foran medical madad hasil karein
+Case 8: ● Symptoms (English): Skin rash and fever
+● Symptoms (Urdu): Jild par daane aur bukhar
+● Severity: Self-care
+● Next Step (English): Viral rash; use prescribed ointments and take fever medication
+● Next Step (Urdu): Viral daane; prescribed cream istemal karein aur bukhar ki dawa lein
+Case 9: ● Symptoms (English): Sudden weight loss and excessive thirst
+● Symptoms (Urdu): Achanak wazan ka kam hona aur zyada pyaas lagna
+● Severity: Emergency
+● Next Step (English): Possible diabetes; seek medical advice for blood tests
+● Next Step (Urdu): Mumkin hai ke diabetes ho; khoon ki jaanch ke liye doctor se raabta karein
+Case 10: ● Symptoms (English): Severe headache, nausea, and sensitivity to light
+● Symptoms (Urdu): Shadeed sar dard, ultili, aur roshni se hypersensitivity
+● Severity: Self-care
+● Next Step (English): Possible migraine; rest in a dark, quiet place and use pain relief medication
+● Next Step (Urdu): Mumkin hai ke migraine ho; andheray aur pur-sukoon jagah par aaram karein aur dard ki dawa lein
+Case 11: ● Symptoms (English): Joint pain and swelling
+● Symptoms (Urdu): Joron mein dard aur sujan
+● Severity: Self-care
+● Next Step (English): Possible arthritis; use anti-inflammatory drugs and rest
+● Next Step (Urdu): Mumkin hai ke arthritis ho; anti-inflammatory dawa istemal karein aur aaram karein
+Eligibility AGent Knowledge Base Preview:
+Applicant 1:
+Income (PKR): 44,131
+Family Size: 8
+Eligible for Sehat Sahulat: Eligible
+Reason: Income or score above eligibility criteria
+Applicant 2:
+Income (PKR): 101,454
+Family Size: 4
+Eligible for Sehat Sahulat: Not eligible
+Reason: Income or score above eligibility criteria
+Applicant 3:
+Income (PKR): 84,103
+Family Size: 4
+Eligible for Sehat Sahulat: Not eligible
+Reason: Income or score above eligibility criteria
+Applicant 4:
+Income (PKR): 17,597
+Family Size: 4
+Eligible for Sehat Sahulat: Eligible
+Reason: Income or score above eligibility criteria
+Applicant 5:
+Income (PKR): 31,197
+Family Size: 5
+Eligible for Sehat Sahulat: Eligible
+Reason: Income or score above eligibility criteria
+Eligibility Logic Recap:
+Income < PKR 40,000: Eligible, regardless of family size.
+Income between PKR 40,000 and PKR 80,000: Eligible only if family size is greater than 5.
+Income > PKR 80,000: Not eligible.
+Conditions and there Key points
+Allergic Rhinitis (Allergies) – Cornell Health:
+The guide explains that allergic rhinitis is an immune reaction to allergens such as pollen or pet dander and may be seasonal Allergic Rhinitis (Allergies) – Cornell Health 1 2 . Symptoms include nasal congestion, runny nose, sneezing, itching and itchy/watery eyes . Self‑care measures include oral antihistamines (cetirizine, loratadine, fexofenadine) for runny nose and sneezing, corticosteroid nasal sprays and decongestants 3 4 ; limiting exposure to allergens by staying indoors on windy days, showering after outdoor exposure and using HEPA‑filter vacuums . When to see a provider: signs of severe allergic reaction such as throat swelling, loss of consciousness, shortness of breath, nausea/vomiting or skin rash
+Constipation
+Cornell Health:
+Occasional constipation can usually be managed without a medical visit. Constipation is a decrease in normal bowel movements and difficulty passing stools, often related to diet, lifestyle or medications . Symptoms include fewer bowel movements, lumpy/hard stools and straining 7 . Self‑care measures: high‑fibre foods and adequate fluids (aim for ~25 g fibre and 1.5–2 L of non‑alcoholic fluids per day), fibre supplements, stool softeners and osmotic laxatives 9 8 . Avoid frequent use of stimulant laxatives . Seek care if: constipation occurs with fever or nausea/vomiting; bowel‑habit changes last >3 months; unexplained weight loss >10 lb
+Conjunctivitis (Pink Eye) – Cornell Health:
+Conjunctivitis is inflammation of the eye’s conjunctiva. Viral/bacterial forms are uncomfortable and contagious but often self‑limited . Typical symptoms are redness, discharge, itching/burning, gritty feeling, swollen eyelids and watery eyes 12 . Self‑care measures include cold compresses, artificial tears/saline drops and stopping contact‑lens use; avoid eye makeup and discard used contacts/makeup . To limit spread, avoid touching eyes, wash hands frequently and do not share towels . When to seek care: known eye injury, moderate/severe pain, vision loss or symptoms lasting >7–10 days
+Cough – Cornell Health:
+Most adult coughs are caused by viruses and resolve in 7–14 days (some may last up to four weeks). Symptoms include a cough (with or without mucus), plus common cold symptoms such as nasal congestion and sore throat 16 17 Cough – Cornell Health . Self‑care: rest; adequate hydration (water/herbal tea); avoid smoking; use humidifier; consider over‑the‑counter cough medications containing dextromethorphan or guaifenesin . When to see a provider: cough lasting >3 weeks, preventing sleep, accompanied by chest pain, producing blood or associated with fever >101 °F for >72 hours
+Diarrhea – Cornell Health:
+Diarrhoea is an increase in frequency or decrease in consistency of bowel movements . Advice differs if vomiting is also present. For diarrhoea with vomiting: settle the stomach first; watch for dehydration and seek care if unable to keep liquids down or if there’s no urination for >8 hours . For diarrhoea without vomiting: drink plenty of fluids (water, sports drinks, diluted juices) and avoid greasy/spicy foods; use BRATS diet (bananas, rice, apples/applesauce, toast, saltines) once tolerated . Over‑the‑counter anti‑diarrheal medications such as loperamide or bismuth subsalicylate may help 23 24 22 . Consider probiotics (Lactobacillus) to shorten the illness . Seek care if: diarrhoea persists >5 days; severe abdominal cramping; fever >2 days; no urination for >8 hours; blood in stool; recent international travel or >5 episodes in one day
+Fever – Cornell Health:
+Fever is defined as body temperature >100.4 °F 26 . It is usually a natural response to infection and often resolves without treatment . Symptoms include hot/cold chills, sweating, shivering, headache, muscle aches and weakness 28 Fever – Cornell Health 30 27 . Self‑care: rest; drink plenty of non‑alcoholic f luids; use ibuprofen or acetaminophen to reduce fever/discomfort ; stay home until fever‑free for >24 hours . When to see a provider: temperature >103 °F or >102 °F for >3 days; confusion/disorientation; severe vomiting; severe headache/neck stiffness; rash, light sensitivity, seizures or abdominal pain
+Influenza (the flu)
+Cornell Health:
+Influenza is a contagious respiratory illness caused by viruses and usually resolves within two weeks 32 . Symptoms include rapid onset of sore throat, muscle aches, runny/stuffy nose, headaches, fatigue, fever/chills and dry cough 33 Influenza (the flu)
+Cornell Health 34 . Self‑care measures: rest, drink fluids, use saline nose drops, take ibuprofen/acetaminophen for fever and pain, use oral or nasal decongestants for short‑term relief and throat sprays/lozenges ; heated humidified air and salt‑water gargles may help 35 36 37 . Antiviral medication (e.g., oseltamivir) is recommended only for high‑risk groups . Prevention includes annual flu vaccination and staying home when sick . When to seek medical care: high‑risk patients (pregnant, immunocompromised, chronic conditions, morbidly obese); fever >102 °F for >3 days; symptoms lasting >10 days or worsening; shortness of breath, confusion, severe vomiting, chest pain, severe sinus pain or very swollen neck glands
+Nausea & Vomiting (“Stomach Bug”)
+Cornell Health:
+Viral gastroenteritis causes nausea/vomiting, abdominal cramping, watery diarrhoea, muscle aches, headache and possibly fever; most people improve within 24 hours and recover by 72 hours Nausea & Vomiting (“Stomach Bug”)
+Cornell Health 40 41 39 . Self‑care: rest; avoid solid foods; sip small amounts of water or oral rehydration solutions; gradually increase fluids; avoid caffeine/alcohol/carbonated drinks; use acetaminophen for fever or body aches and loperamide for diarrhoea lasting >2 days . Recovery guidelines recommend resuming solid food after nausea/vomiting resolve for at least 6 hours, beginning with the BRATS diet . When to seek care: vomiting >24 hours; bloody diarrhoea; symptoms suggesting appendicitis (pain isolated to right lower abdomen)
+Sore Throat – Cornell Health:
+About 85–90 % of sore throats are viral and resolve without medical care . Symptoms: sore throat, swollen lymph nodes, fever up to 102 °F, muscle aches and, within 2–3 days, nasal congestion and cough . Self‑care: rest, hydration, ibuprofen or acetaminophen for fever/ discomfort, avoid cigarettes, gargle with warm salt water and use throat sprays/lozenges 45 46 . Stay home until fever‑free for >24 hours . When to seek care: fever >102 °F or >101 °F lasting >3 days; inability to swallow saliva; significant swelling of one tonsil; sore throat not improving after 2 3 days without cold symptoms; development of rash or persistent abdominal pain
+Upper Respiratory Infection (Common Cold)
+Cornell Health:
+Common colds are viral and usually last 10–12 days; related coughs can persist 3–4 weeks 48 . Symptoms develop over 2–4 days and include sore throat, fatigue, nasal congestion, runny nose, cough, fever up to 102 °F, headache, muscle aches and watery eyes 49 Upper Respiratory Infection (Common Cold)
+Cornell Health . Self‑care: rest; drink water; use saline nose drops or rinses; take ibuprofen/acetaminophen for fever or pain; gargle salt water; use humidified air; consider nasal or oral decongestants and non‑prescription cough medication, checking with a pharmacist if taking stimulant medications 51 50 . Avoid overlapping ingredients in multi‑symptom products . When to seek care: fever >102 °F for >3 days; symptoms lasting >10 days and worsening; shortness of breath/wheezing; chest pain; severe sinus pain; very swollen neck glands; significant sore throat lasting >1 week 52 53 . The guide also links to a Family Doctor symptom checker and cold/flu overview
+Vaginal Yeast Infection – Cornell Health:
+Vaginal yeast infections occur when Candida yeast overgrows; women who have had previous yeast infections and recognise their symptoms can often self‑treat 54 . Symptoms include vaginal itching/burning/swelling, thick white discharge without bad odour and possible pain during intercourse 55 Vaginal Yeast Infection – Cornell Health . Self‑care: use over‑the‑counter antifungal medications containing butoconazole, clotrimazole, miconazole or tioconazole (cream or suppository) 56 57 ; avoid 1‑ or 3‑day treatments if sensitive and note that creams can weaken latex condoms . Seek care if: it’s the first episode; concern for sexually transmitted infection; discharge has foul odour; painful sore in genital area; symptoms of bladder infection; no improvement 3 days after treatment . Preventive tips include changing menstrual products often, avoiding douching or scented products, wearing breathable cotton underwear and promptly changing out of wet clothing
+NHS Winter‑Health Manual (“Keep Calm and Look After Yourself”):
+This NHS booklet emphasises self‑care for winter ailments so that GPs can focus on more serious cases. It explains that colds usually start with a sore or tickly throat, followed by blocked/runny nose, sneezing, cough and hoarse voice 60 . Less common symptoms are mild fever, headache, earache, muscle pain and loss of taste or smell 61 . Most colds last about a week (coughs may persist up to three weeks) . Treatment: drink plenty of fluids, get rest, gargle salt water, use vapour rubs and take paracetamol or ibuprofen for fever and pain 62 63 . **Seek prompt medical advice for a child with a temperature >39 °C (>38 °C if <6 months) and do not use antibiotics for viral colds 64 NHS Winter‑Health Manual (“Keep Calm and Look After Yourself”) . For flu, symptoms include sudden fever ≥38 °C, dry cough, headache, tiredness, aching muscles, chills, limb/ joint pain, loss of appetite, diarrhoea/upset stomach, sore throat, and runny/blocked nose 65 . Most people recover in 5–8 days but may feel tired for 2–3 weeks ; treatment is similar to colds 66 70 67 . Antibiotics are ineffective for flu unless complications like pneumonia occur . The booklet also covers sore throats, aches/pains, upset stomach/diarrhoea and vomiting, cold sores and provides a list of red‑flag symptoms (e.g., severe headache with vomiting, difficulty breathing, chest pain, difficulty swallowing, coughing up blood) that require urgent medical attention . For diarrhoea/vomiting, it emphasises fluid replacement, light diet and staying home to avoid spreading norovirus 71 72 68 69 and notes to call a GP if vomiting persists >48 hours or diarrhoea doesn’t settle after four days
+Headaches and Migraines (NHS guidance) ● Description & common causes: Headaches are usually self‑limiting and may be triggered by viral infections, stress, alcohol, poor posture, eyesight problems, irregular meals, dehydration or hormonal changesnhs.uk. Migraine or cluster headaches tend to be throbbing or one‑sided and may be accompanied by nausea or light sensitivitynhs.uk.
+● Self‑care measures:
+○ Drink plenty of water, rest and relax; take over‑the‑counter pain relievers such as paracetamol or ibuprofennhs.uk.
+○ Avoid alcohol, skipping meals, oversleeping or straining your eyesnhs.uk.
+● When to see a doctor:
+○ See a GP if headaches recur frequently, are not relieved by painkillers, or are accompanied by nausea, light sensitivity or occur during the menstrual cyclenhs.uk.
+○ Seek urgent medical attention for sudden severe headaches, head injuries, persistent headaches with jaw pain, vision changes, speech problems, confusion, high fever or a stiff necknhs.uk.
+Urinary Tract Infection (UTI) ● Description & symptoms: UTIs involve the bladder (cystitis), urethra or kidneys. Symptoms include pain or burning when peeing, needing to urinate more often (including at night), urgency, cloudy or bloody urine, lower abdominal or back pain, fever or feeling shiverynhs.uk. Older adults may present with behavioural changes or incontinencenhs.uk.
+● Self‑care measures:
+○ Take paracetamol for pain or fever and drink enough fluids so urine stays palenhs.uk.
+○ Cranberry products or D‑mannose may help prevent recurrent cystitis but do not treat an active infectionnhs.uk.
+○ Preventive practices: wipe front to back, keep the genital area clean and dry, drink plenty of water, pee soon after sex, wear cotton underwear, and avoid holding urine or drinking excessive alcohol and sugary drinksnhs.uk.
+● When to seek help:
+○ See a pharmacist: women aged 16–64 with typical symptoms may receive antibiotics from a pharmacistnhs.uk.
+○ Urgent GP or NHS 111: required if you are 65 or older, a man, pregnant, a child under 15, have diabetes, a weakened immune system, persistent or worsening symptoms after 48 hours, pain in the lower tummy or back, or blood in the urinenhs.uk.
+○ Emergency: call emergency services if the person becomes confused, drowsy or has difficulty speakingnhs.uk, as this could indicate sepsis or a kidney infection.
+Sinusitis (Sinus Infection) ● Description & symptoms: Sinusitis is swelling of the sinuses (usually after a cold or flu). Symptoms include pain or pressure around the cheeks, eyes or forehead, blocked or runny nose, reduced sense of smell, green or yellow nasal discharge and fevernhs.uk. Additional symptoms may be headache, toothache, cough or ear pressurenhs.uk.
+● Self‑care measures:
+○ Rest, drink plenty of fluids and take painkillers such as paracetamol or ibuprofennhs.uk.
+○ Avoid allergy triggers and do not smokenhs.uk.
+○ Clean your nose with a homemade saline solution (mix salt and bicarbonate of soda with boiled, cooled water and sniff it gently up each nostril)nhs.uk.
+○ Stay home if you have a high temperature or feel too unwell for normal activitiesnhs.uk.
+● When to seek help:
+○ Pharmacist: see a pharmacist if you or a child (≥12 years) have sinusitisnhs.uk.
+○ GP: if symptoms do not improve after 7 days of pharmacy treatment, after 3 weeks of self‑care, or if sinusitis keeps returningnhs.uk.
+○ Urgent GP or NHS 111: if you are very unwell, painkillers do not help or symptoms get worse, or you have a weakened immune systemnhs.uk.
+○ Treatment: steroid nasal sprays or drops and antihistamines may be prescribed; antibiotics are rarely needednhs.uk.
+Ear Infections (Otitis) ● Description & symptoms: Ear infections are common, especially in children. Symptoms start quickly and include earache, fever, difficulty hearing, ear discharge, pressure or fullness, itching or scaly skinnhs.uk. Young children may rub their ears, be irritable, have poor feeding or lose balancenhs.uk.
+● Self‑care measures:
+○ Use paracetamol or ibuprofen for pain (do not give aspirin to children)nhs.uk.
+○ Gently wipe away discharge with cotton woolnhs.uk.
+○ Avoid: putting cotton buds or fingers in the ear, letting water or shampoo into the ear, swimming while infected, or using decongestants/antihistamines (no evidence of benefit)nhs.uk.
+● When to seek help:
+○ Pharmacist: for children aged 1–17, a pharmacist can provide advice or similar treatments as a GPnhs.uk.
+○ GP: if a child is under 12 months and has an ear infection, if earache lasts more than 3 days, or if ear infections keep recurringnhs.uk.
+○ Urgent GP/NHS 111: for general unwellness, very high fever, swelling around the ear, fluid leaking from the ear, hearing changes, persistent vomiting or severe sore throat, both ears infected in a child <12 months, or underlying health conditionsnhs.uk.
+Hives (Urticaria / Nettle Rash) ● Description & symptoms: Hives are raised, itchy bumps or patches that can appear anywhere on the body and may sting or burnnhs.uk. They often look pink or red on light skin; the colour may be harder to see on darker skinnhs.uk.
+● Self‑care measures:
+○ A pharmacist can recommend antihistamines to relieve itching; tell them about long‑term conditions since some antihistamines may not be suitablenhs.uk.
+○ Most cases resolve within a few days without treatment; antihistamines are usually sufficientnidirect.gov.uk.
+○ Avoid known triggers (foods, medications, extreme temperatures, alcohol or caffeine)nidirect.gov.uk.
+● When to seek help:
+○ GP/NHS 111: if symptoms persist beyond 48 hours or do not improve after 2 days, if the rash spreads or keeps recurring, if accompanied by fever or swelling under the skin (possible angioedema), or if a child’s hives worry younhs.uknidirect.gov.uk.
+○ Emergency: call 999 for signs of anaphylaxis such as sudden swelling of lips, mouth or tongue, difficulty breathing, tight throat, blue/grey skin, confusion or collapsenhs.uk.
+Indigestion (Dyspepsia / Heartburn) ● Description & symptoms: Indigestion is common and usually not serious; symptoms include burning chest pain (heartburn) after eating, feeling full or bloated, nausea, burping, farting or regurgitating food or bitter fluidsnhs.uk.
+● Self‑care measures:
+○ Reduce tea, coffee, cola or alcohol; elevate head and shoulders when sleeping; lose weight if overweightnhs.uk.
+○ Avoid eating 3–4 hours before bed, rich or spicy foods, ibuprofen or aspirin (unless prescribed), and smokingnhs.uk.
+○ A pharmacist can recommend antacids, alginates or proton pump inhibitors to ease burning or painnhs.uk.
+● When to see a doctor:
+○ See a GP if indigestion keeps returning; if you have severe pain; unexplained weight loss; difficulty swallowing; persistent vomiting; iron‑deficiency anaemia; a lump in the stomach; or blood in vomit or stoolnhs.uk.
+○ These may be signs of a more serious condition (such as ulcers or cancer)nhs.uk.
+Kidney Stones ● Description & symptoms: Kidney stones form when waste crystals build up in the kidneys or ureters and are common in adults aged 30–60. Small stones may pass unnoticed; larger stones can cause severe side or abdominal pain, pain that comes and goes, nausea or vomitingnhs.uk.
+● Self‑care measures (small stones):
+○ Many small stones can be passed at home. A GP may suggest non‑steroidal anti‑inflammatory drugs for pain and recommend drinking plenty of fluids and possibly anti‑sickness medicine or alpha‑blockers to help stones passnhs.uk.
+○ Drink up to 3 litres of fluid daily (water, tea, or coffee); add fresh lemon juice; avoid fizzy drinks and excess saltnhs.uk. Pale urine indicates adequate hydrationnhs.uk.
+● When to seek help:
+○ Urgent GP/NHS 111: contact a healthcare provider if you are in severe pain, have a high temperature, episodes of shivering or shaking, or blood in your urinenhs.uk. These could signal infection or obstruction.
+○ Hospital referral: severe pain or large stones may require imaging and potentially surgery; procedures include shock‑wave lithotripsy, ureteroscopy or percutaneous nephrolithotomynhs.uk.
+Appendicitis ● Description & symptoms: Appendicitis is inflammation of the appendix that usually causes pain around the belly button moving to the lower right abdomen; pain worsens with movement, coughing or pressingnhs.uk. Some people may have atypical pain; other symptoms can include nausea or vomiting, fever, constipation or diarrhoea, increased urination or sudden confusion in older peoplenhs.uk.
+● Self‑care: There are no appropriate self‑care measures for appendicitis. It requires urgent medical assessment.
+● When to seek help:
+○ Urgent GP/NHS 111: if abdominal pain is gradually getting worse or does not go away, or moves to the lower right sidenhs.uk.
+○ Emergency: call 999 or go to A&E for severe abdominal pain or signs of sepsis (confusion, pale/blue skin, difficulty breathing)nhs.uk. Untreated appendicitis can cause the appendix to burst, leading to life‑threatening complicationsnhs.uk.
+Vertigo (Balance Problems) ● Description & symptoms: Vertigo is the sensation that you or your surroundings are spinning; it can be triggered by inner ear problems and may last seconds to hoursnhs.uk. Severe vertigo can persist for days or months.
+● Self‑care measures:
+○ During an episode, lie still in a quiet, dark room, move your head carefully, sit down as soon as you feel dizzy, turn on lights before getting up at night, and use a walking stick if at risk of fallingnhs.uk.
+○ Sleep with your head slightly raised and get up slowly, sitting on the bed edge before standingnhs.uk.
+○ Try to relax as anxiety can worsen vertigonhs.uk.
+○ Avoid: bending over or stretching your neck to reach high shelvesnhs.uk.
