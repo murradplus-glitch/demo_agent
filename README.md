@@ -15,12 +15,25 @@ lders so the workflow and tests can run offline.
 
 ## Quick start
 
+This repository still ships the exact combination the brief called for: a
+retrieval-augmented generation (RAG) stack wired into a LangGraph-style
+multi-agent workflow. The `HealthcareMultiAgentSystem` class initialises the
+`HealthcareRAGPipeline`, feeds its retrieved passages to each specialised agent,
+and drives a `StateGraph` defined in `agentic/orchestrator.py`. Nothing in the
+recent CNIC/registration updates changed that plumbing – you still get a
+LangGraph-executed chain of six agents whose responses cite the underlying RAG
+context.
+
 ```bash
 python -m pip install -r requirements.txt
 cp agentic/config.example.yaml agentic/config.yaml  # optional but handy
 export GEMINI_API_KEY=your-key  # or edit the config file
 python -m agentic.examples.run_healthcare_system
 ```
+
+> ✅ **Smoke test:** `python -m compileall agentic streamlit_app.py` compiles the
+> orchestrator, agents, and Streamlit UI so you can confirm the environment is
+> healthy even before launching Streamlit.
 
 > 💡 **Tip:** Run `python -m agentic.examples.check_setup` to confirm LangGraph is
 > installed and that the mock CSV/PDF data files can be found on your machine.
@@ -38,6 +51,28 @@ below the UI automatically populates the citizen profile (name, city, family
 size, NSER score, income, and Sehat Card eligibility) before the RAG-powered
 multi-agent workflow starts. Unknown CNICs trigger a lightweight form so the
 user can supply the minimum details the agents need.
+
+#### Quick registration & “no city yet” flow
+
+Case B from the usability brief (an unexpected CNIC) is implemented exactly as
+described:
+
+1. The login step still accepts any CNIC format but, when the CNIC is missing
+   from `agentic/data/demo_citizen_profiles.csv`, the UI renders a **Quick
+   Registration (Demo)** form that blocks the assistant until the user submits
+   family size, an income bracket, city/town, province (optional), and rural vs
+   urban.
+2. The Facility Finder agent refuses to hallucinate locations. If the user
+   skips the city field (or clears it later), Triage and Program Eligibility
+   continue running, but the facility node pauses and politely asks for the
+   city before showing BHU or hospital names.
+3. When the citizen later types a phrase such as “I live in Multan,” the system
+   extracts the city name, updates the profile, and lets the facility
+   recommendations resume.
+
+This behaviour is surfaced in `streamlit_app.py` (gating the chat UI and
+showing the form/expander) and `agentic/orchestrator.py` (where the LangGraph
+node checks for a city before querying the BHU directory).
 
 ### Agents and workflow
 
