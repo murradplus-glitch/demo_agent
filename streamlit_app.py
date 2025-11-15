@@ -115,6 +115,7 @@ def _render_quick_registration(existing: dict[str, Any] | None = None) -> None:
         "We don’t recognise this CNIC in the demo dataset."
         " Please share household details so agents can guide you properly."
     )
+    st.caption("All fields are required so that eligibility, facility finding, and follow-up steps behave exactly like the target workflow.")
     default_income = existing.get("income_range_label") if existing else _INCOME_RANGE_OPTIONS[0]
     default_index = _INCOME_RANGE_OPTIONS.index(default_income) if default_income in _INCOME_RANGE_OPTIONS else 0
     default_province = existing.get("province", "") if existing else ""
@@ -175,8 +176,9 @@ def _render_chat() -> None:
         "Citizen question",
         value=st.session_state.get("last_query", ""),
         key="citizen_query",
-        placeholder="e.g. My child has a fever and I want to use the Sehat Card. Where should I go?",
+        placeholder="How can I help you today?",
     )
+    st.caption("Agent order: Triage → Program Eligibility → Facility Finder → Follow-Up → Health Analytics (Knowledge agent shares alerts in the report).")
     run_clicked = st.button("Run multi-agent assistant", type="primary", use_container_width=True)
     if run_clicked:
         if not query.strip():
@@ -225,17 +227,34 @@ def _render_report() -> None:
 # ---------------------------------------------------------------------------
 _ensure_session_defaults()
 st.title("SehatBuddy – Connected Health Assistant (Demo)")
-cnic_input = st.text_input("Enter your CNIC", value=st.session_state.get("cnic_entered", ""), placeholder="e.g. 12345-1234567-1")
+st.markdown(
+    """
+    **Welcome!** This demo follows the exact workflow outlined in the usability brief:
+
+    1. Enter a CNIC. Known CNICs instantly load Ali Khan or Ayesha Bibi’s household profile.
+    2. Unknown CNICs unlock a Quick Registration form (family size, income range, city/town, province, rural/urban) before chatting.
+    3. Ask a health question so the agents can run _Triage → Program Eligibility → Facility Finder → Follow-Up → Health Analytics_.
+    """
+)
+cnic_input = st.text_input(
+    "Enter your CNIC to continue",
+    value=st.session_state.get("cnic_entered", ""),
+    placeholder="e.g. 12345-1234567-1",
+)
+st.caption("If this CNIC is new, we’ll collect a few household details to guide you correctly.")
+st.info("Demo CNIC: 12345-1234567-1 (use this to explore the system).")
 examples = demo_cnic_examples()
 if examples:
-    st.caption("Demo CNICs you can use:")
+    st.caption("Additional demo CNICs you can use:")
     for example in examples:
         eligibility = "Eligible" if example.get("sehat_card_eligible") else "Not eligible"
         st.write(f"**{example['cnic']}** – {example.get('name')} ({eligibility}, {example.get('city')})")
 if st.button("Continue", type="primary"):
     _handle_login(cnic_input)
     if not st.session_state.get("profile_known"):
-        st.warning("CNIC not found in demo profiles. Fill in the details below to continue.")
+        st.warning(
+            "CNIC not found in demo profiles. The Quick Registration form below must be completed before the chat unlocks."
+        )
 
 if st.session_state.get("citizen_profile"):
     _profile_summary(st.session_state["citizen_profile"], st.session_state.get("profile_known", False))
