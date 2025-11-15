@@ -74,6 +74,40 @@ This behaviour is surfaced in `streamlit_app.py` (gating the chat UI and
 showing the form/expander) and `agentic/orchestrator.py` (where the LangGraph
 node checks for a city before querying the BHU directory).
 
+### Run the project locally (step-by-step)
+
+The commands above are usually all you need, but if you are starting from a
+fresh laptop the following checklist walks through the exact flow:
+
+1. **Clone the repo & pick a Python** – install Python 3.10+ and run
+   `git clone https://github.com/<your-org>/demo_agent.git && cd demo_agent`.
+2. **Create an isolated environment** – `python -m venv .venv && source .venv/bin/activate`
+   (or use Conda/uv if you prefer).
+3. **Install dependencies** – `python -m pip install --upgrade pip` followed by
+   `pip install -r requirements.txt`. The requirements file already bundles
+   LangGraph, Streamlit, and the utility libraries used by the multi-agent
+   pipeline.
+4. **Configure keys & data paths** – copy
+   `agentic/config.example.yaml` to `agentic/config.yaml` if you want to persist
+   settings, then set `export GEMINI_API_KEY=...` (or fill the config file).
+   Leave the CSV/Markdown data files in the repo root so the mock registries can
+   be found without editing paths.
+5. **Smoke-test the environment** – run
+   `python -m compileall agentic streamlit_app.py` to catch syntax/import issues
+   early, then `python -m agentic.examples.run_healthcare_system` to confirm the
+   LangGraph pipeline and RAG knowledge base initialise correctly.
+6. **Launch the Streamlit UI** – `streamlit run streamlit_app.py` starts the
+   CNIC → quick registration → chat workflow described in the usability brief.
+   Open the printed local URL (e.g. `http://localhost:8501`) in a browser and
+   use the demo CNICs listed below.
+7. **(Optional) Develop with hot reload** – keep Streamlit running and edit
+   Python files; Streamlit will auto-reload the interface so you can iterate on
+   prompts, agent logic, or registration UI copy.
+
+Following these steps gives you the exact experience validated in the challenge:
+the known/unknown CNIC flows, the five-agent LangGraph pipeline, and the RAG
+context feeding every response.
+
 ### Agents and workflow
 
 The LangGraph state machine executes the agents in the following order (the
