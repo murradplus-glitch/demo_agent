@@ -3,9 +3,12 @@ gemini_model: models/gemini-1.5-flash
 gemini_api_key: "YOUR-KEY-HERE"
 temperature: 0.2
 top_k: 4
-knowledge_base_path: agentic/data/medical_guidelines.md
+knowledge_base_path: agentic/data/pakistan_health_guidelines.md
 chunk_size: 450
 chunk_overlap: 60
 mcp_servers:
   - filesystem
   - fetch
+triage_data_path: triage_data_large.csv
+facility_data_path: facility_data_large.csv
+eligibility_data_path: eligibility_data_large.csv

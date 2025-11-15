@@ -1,16 +1,20 @@
 """Agents that make up the healthcare workflow."""
 
 from .base import AgentOutput, BaseHealthcareAgent
-from .care_planner import CarePlanAgent
-from .patient_intake import PatientIntakeAgent
-from .research import EvidenceResearchAgent
-from .safety import SafetyReviewAgent
+from .facility_finder import FacilityFinderAgent
+from .follow_up import FollowUpAgent
+from .health_analytics import HealthAnalyticsAgent
+from .knowledge import KnowledgeAgent
+from .program_eligibility import ProgramEligibilityAgent
+from .triage import TriageAgent
 
 __all__ = [
     "AgentOutput",
     "BaseHealthcareAgent",
-    "CarePlanAgent",
-    "PatientIntakeAgent",
-    "EvidenceResearchAgent",
-    "SafetyReviewAgent",
+    "FacilityFinderAgent",
+    "FollowUpAgent",
+    "HealthAnalyticsAgent",
+    "KnowledgeAgent",
+    "ProgramEligibilityAgent",
+    "TriageAgent",
 ]
