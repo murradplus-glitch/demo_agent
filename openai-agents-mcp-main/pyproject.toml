@@ -1,0 +1,121 @@
+[project]
+name = "openai-agents-mcp"
+version = "0.0.8"
+description = "MCP (Model Context Protocol) extension for OpenAI Agents SDK, built using mcp-agent"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Sarmad Qadri", email = "sarmad@lastmileai.dev" },
+]
+dependencies = [
+    "openai-agents>=0.0.5",
+    "mcp-agent>=0.0.13",
+]
+classifiers = [
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/saqadri/openai-agents-mcp"
+Repository = "https://github.com/saqadri/openai-agents-mcp"
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "ruff==0.9.2",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-mock>=3.14.0",
+    "coverage>=7.7.0",
+]
+
+[tool.uv.workspace]
+members = ["agents_mcp"]
+
+[tool.uv.sources]
+agents_mcp = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agents_mcp"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+isort = { combine-as-imports = true, known-first-party = ["agents_mcp"] }
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"examples/**/*.py" = ["E501"]
+"tests/**/*.py" = ["E501"]
+
+[tool.mypy]
+strict = true
+disallow_incomplete_defs = false
+disallow_untyped_defs = false
+disallow_untyped_calls = false
+disallow_untyped_decorators = false
+
+# Disable errors for 3rd-party packages without stubs
+[[tool.mypy.overrides]]
+module = [
+    "agents.*",
+    "mcp_agent.*"
+]
+ignore_missing_imports = true
+
+# Ignore errors in tests/
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+ignore_errors = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.coverage.run]
+source = [
+    "tests",
+    "src/agents_mcp",
+]
+
+[tool.coverage.report]
+show_missing = true
+sort = "-Cover"
+exclude_also = [
+    # This is only executed while typechecking
+    "if TYPE_CHECKING:",
+    "@abc.abstractmethod",
+    "raise NotImplementedError",
+    "logger.debug",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"  
+asyncio_default_fixture_loop_scope = "session"
