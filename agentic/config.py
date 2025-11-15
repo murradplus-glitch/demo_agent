@@ -20,10 +20,13 @@ class AgenticSettings:
     gemini_api_key: str | None = None
     temperature: float = 0.2
     top_k: int = 4
-    knowledge_base_path: str = "agentic/data/medical_guidelines.md"
+    knowledge_base_path: str = "agentic/data/pakistan_health_guidelines.md"
     chunk_size: int = 450
     chunk_overlap: int = 60
     mcp_servers: list[str] | None = None
+    triage_data_path: str = "triage_data_large.csv"
+    facility_data_path: str = "facility_data_large.csv"
+    eligibility_data_path: str = "eligibility_data_large.csv"
 
 
 DEFAULT_CONFIG = Path("agentic/config.yaml")
@@ -56,4 +59,10 @@ def load_settings(path: str | Path | None = None) -> AgenticSettings:
         chunk_size=int(payload.get("chunk_size", AgenticSettings.chunk_size)),
         chunk_overlap=int(payload.get("chunk_overlap", AgenticSettings.chunk_overlap)),
         mcp_servers=list(payload.get("mcp_servers", []) or []),
+        triage_data_path=payload.get("triage_data_path", AgenticSettings.triage_data_path),
+        facility_data_path=payload.get("facility_data_path", AgenticSettings.facility_data_path),
+        eligibility_data_path=payload.get(
+            "eligibility_data_path",
+            AgenticSettings.eligibility_data_path,
+        ),
     )

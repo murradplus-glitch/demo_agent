@@ -10,10 +10,21 @@ def main() -> None:
     system = HealthcareMultiAgentSystem(settings=settings)
     report = system.run(
         patient_query=(
-            "I'm a 48 year old with type 2 diabetes. I have had a dry cough and "
-            "a mild fever for the last three days and I'm unsure if I should go to urgent care."
+            "My child has had a persistent fever for two days and I would like to use "
+            "our Sehat Card for care. Which facility should we visit?"
         ),
-        labs="Blood glucose 155 mg/dL, BP 128/84",
+        citizen_profile={
+            "name": "Sara",
+            "age": 6,
+            "city": "Rawalpindi",
+            "area": "Shamsabad",
+            "region": "Punjab",
+            "nser_score": 27,
+            "income_per_month_pkrs": 26000,
+            "family_size": 5,
+            "preferred_language": "Urdu",
+            "conditions": ["No chronic conditions"],
+        },
     )
     print(report.to_json())
 
