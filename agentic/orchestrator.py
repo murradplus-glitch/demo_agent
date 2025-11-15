@@ -154,7 +154,7 @@ class HealthcareMultiAgentSystem:
             citizen_profile=profile,
             retrieved_context=retrieved_context,
         )
-        final_state = self.graph.invoke(initial_state)
+        final_state = self._coerce_graph_state(self.graph.invoke(initial_state))
         assert final_state.triage and final_state.program_eligibility
         assert final_state.facility_finder and final_state.follow_up
         assert final_state.health_analytics and final_state.knowledge
@@ -281,6 +281,43 @@ class HealthcareMultiAgentSystem:
             "facilities": state.facility_finder.metadata if state.facility_finder else {},
             "follow_up": state.follow_up.metadata if state.follow_up else {},
         }
+
+    def _coerce_graph_state(
+        self, state: HealthcareGraphState | dict[str, Any]
+    ) -> HealthcareGraphState:
+        if isinstance(state, HealthcareGraphState):
+            return state
+        if isinstance(state, dict):
+            retrieved_context = state.get("retrieved_context")
+            if not isinstance(retrieved_context, RetrievedContext):
+                retrieved_context = RetrievedContext(
+                    question=str(state.get("patient_query", "")),
+                    passages=[],
+                )
+            citizen_profile_raw = state.get("citizen_profile")
+            if isinstance(citizen_profile_raw, dict):
+                citizen_profile = dict(citizen_profile_raw)
+            elif citizen_profile_raw is None:
+                citizen_profile = {}
+            elif hasattr(citizen_profile_raw, "__dict__"):
+                citizen_profile = dict(vars(citizen_profile_raw))
+            else:
+                citizen_profile = dict(citizen_profile_raw)
+            return HealthcareGraphState(
+                patient_query=str(state.get("patient_query", "")),
+                citizen_profile=citizen_profile,
+                retrieved_context=retrieved_context,
+                triage=state.get("triage"),
+                program_eligibility=state.get("program_eligibility"),
+                facility_finder=state.get("facility_finder"),
+                follow_up=state.get("follow_up"),
+                health_analytics=state.get("health_analytics"),
+                knowledge=state.get("knowledge"),
+            )
+        raise TypeError(
+            "Unsupported state returned by the LangGraph backend: "
+            f"{type(state)!r}"
+        )
 
     def _default_profile(self) -> dict[str, Any]:
         return {
