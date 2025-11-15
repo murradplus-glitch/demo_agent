@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+import os
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -16,8 +17,15 @@ except ModuleNotFoundError:  # pragma: no cover - optional dependency
 class AgenticSettings:
     """Runtime configuration for the agentic healthcare system."""
 
-    gemini_model: str = "models/gemini-1.5-flash"
-    gemini_api_key: str | None = None
+    gemini_model: str = field(
+        default_factory=lambda: os.getenv("GEMINI_MODEL")
+        or os.getenv("GOOGLE_MODEL")
+        or "models/gemini-1.5-flash"
+    )
+    gemini_api_key: str | None = field(
+        default_factory=lambda: os.getenv("GEMINI_API_KEY")
+        or os.getenv("GOOGLE_API_KEY")
+    )
     temperature: float = 0.2
     top_k: int = 4
     knowledge_base_path: str = "agentic/data/pakistan_health_guidelines.md"
@@ -48,21 +56,23 @@ def load_settings(path: str | Path | None = None) -> AgenticSettings:
     with config_path.open("r", encoding="utf-8") as handle:
         payload: dict[str, Any] = yaml.safe_load(handle) or {}
 
+    defaults = AgenticSettings()
+
     return AgenticSettings(
-        gemini_model=payload.get("gemini_model", AgenticSettings.gemini_model),
-        gemini_api_key=payload.get("gemini_api_key"),
-        temperature=float(payload.get("temperature", AgenticSettings.temperature)),
-        top_k=int(payload.get("top_k", AgenticSettings.top_k)),
+        gemini_model=payload.get("gemini_model", defaults.gemini_model),
+        gemini_api_key=payload.get("gemini_api_key", defaults.gemini_api_key),
+        temperature=float(payload.get("temperature", defaults.temperature)),
+        top_k=int(payload.get("top_k", defaults.top_k)),
         knowledge_base_path=payload.get(
-            "knowledge_base_path", AgenticSettings.knowledge_base_path
+            "knowledge_base_path", defaults.knowledge_base_path
         ),
-        chunk_size=int(payload.get("chunk_size", AgenticSettings.chunk_size)),
-        chunk_overlap=int(payload.get("chunk_overlap", AgenticSettings.chunk_overlap)),
+        chunk_size=int(payload.get("chunk_size", defaults.chunk_size)),
+        chunk_overlap=int(payload.get("chunk_overlap", defaults.chunk_overlap)),
         mcp_servers=list(payload.get("mcp_servers", []) or []),
-        triage_data_path=payload.get("triage_data_path", AgenticSettings.triage_data_path),
-        facility_data_path=payload.get("facility_data_path", AgenticSettings.facility_data_path),
+        triage_data_path=payload.get("triage_data_path", defaults.triage_data_path),
+        facility_data_path=payload.get("facility_data_path", defaults.facility_data_path),
         eligibility_data_path=payload.get(
             "eligibility_data_path",
-            AgenticSettings.eligibility_data_path,
+            defaults.eligibility_data_path,
         ),
     )
