@@ -37,11 +37,12 @@ class GeminiClient:
     def __init__(
         self,
         api_key: str | None = None,
-        model: str = "models/gemini-1.5-flash",
+        model: str | None = None,
         temperature: float = 0.2,
     ) -> None:
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
-        self.model = model
+        self.api_key = api_key or os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        env_model = os.getenv("GEMINI_MODEL") or os.getenv("GOOGLE_MODEL")
+        self.model = self._normalize_model_name(model or env_model)
         self.temperature = temperature
 
     def generate(self, prompt: str, system_instruction: str | None = None) -> GeminiResponse:
@@ -100,6 +101,29 @@ class GeminiClient:
                 """
             ).strip()
         return prompt
+
+    def _normalize_model_name(self, model: str | None) -> str:
+        """Map shorthand labels to the full Gemini REST identifiers."""
+
+        if not model:
+            return "models/gemini-1.5-flash"
+
+        trimmed = model.strip()
+        shorthand_map = {
+            "gemini-2.5-flash": "models/gemini-2.0-flash-exp",
+            "gemini-2.0-flash": "models/gemini-2.0-flash-exp",
+            "2.5-flash": "models/gemini-2.0-flash-exp",
+            "2.0-flash": "models/gemini-2.0-flash-exp",
+            "1.5-flash": "models/gemini-1.5-flash",
+        }
+
+        if trimmed in shorthand_map:
+            return shorthand_map[trimmed]
+
+        if not trimmed.startswith("models/"):
+            return f"models/{trimmed}"
+
+        return trimmed
 
     def _offline_response(self, prompt: str, system_instruction: str | None) -> GeminiResponse:
         seed = hash((prompt, system_instruction, self.model)) & 0xFFFF
