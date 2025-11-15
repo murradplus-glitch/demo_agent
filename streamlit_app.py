@@ -36,6 +36,26 @@ def _ensure_session_defaults() -> None:
     st.session_state.setdefault("last_query", "")
 
 
+_INCOME_RANGE_OPTIONS = [
+    "< Rs 25,000",
+    "Rs 25,000 – 50,000",
+    "Rs 50,000 – 100,000",
+    "> Rs 100,000",
+]
+
+
+_PROVINCE_OPTIONS = [
+    "",
+    "Punjab",
+    "Sindh",
+    "KP",
+    "Balochistan",
+    "GB",
+    "AJK",
+    "Islamabad",
+]
+
+
 def _handle_login(cnic_value: str) -> None:
     profile = get_profile_by_cnic(cnic_value)
     st.session_state["cnic_entered"] = cnic_value.strip()
@@ -46,19 +66,25 @@ def _handle_login(cnic_value: str) -> None:
 
 
 def _profile_summary(profile: dict[str, Any], known: bool) -> None:
-    st.markdown("### Citizen Profile" + (" (Demo)" if known else ""))
+    st.markdown("### Citizen Profile" + (" (Demo)" if known else " – Quick registration"))
     cols = st.columns(3)
     cols[0].metric("CNIC", profile.get("cnic", "—"))
-    cols[1].metric("Name", profile.get("name", "—"))
-    cols[2].metric("City", profile.get("city", "—"))
+    cols[1].metric("Name", profile.get("name", "—") or "—")
+    cols[2].metric("City", profile.get("city", "—") or "—")
     cols = st.columns(3)
     cols[0].metric("Family size", str(profile.get("family_size", "—")))
     income = profile.get("income_per_month_pkrs")
-    income_label = f"Rs {income:,}" if isinstance(income, int) and income else "—"
-    cols[1].metric("Monthly income", income_label)
+    income_label = profile.get("income_range_label")
+    if not income_label:
+        income_label = f"Rs {income:,}" if isinstance(income, int) and income else "—"
+    cols[1].metric("Monthly income", income_label or "—")
     eligibility = profile.get("sehat_card_eligible")
-    emoji = "✅" if eligibility else "❌"
-    cols[2].metric("Sehat Card Eligibility", emoji + (" Eligible" if eligibility else " Not eligible"))
+    if eligibility is True:
+        cols[2].metric("Sehat Card Eligibility", "✅ Eligible")
+    elif eligibility is False:
+        cols[2].metric("Sehat Card Eligibility", "❌ Not eligible")
+    else:
+        cols[2].metric("Sehat Card Eligibility", "❔ Pending assessment")
     with st.expander("More household details"):
         st.write(
             {
@@ -73,37 +99,74 @@ def _profile_summary(profile: dict[str, Any], known: bool) -> None:
         )
 
 
-def _render_unknown_form() -> None:
+def _income_label_to_value(label: str) -> int:
+    mapping = {
+        "< Rs 25,000": 20000,
+        "Rs 25,000 – 50,000": 37500,
+        "Rs 50,000 – 100,000": 75000,
+        "> Rs 100,000": 120000,
+    }
+    return mapping.get(label, 0)
+
+
+def _render_quick_registration(existing: dict[str, Any] | None = None) -> None:
+    st.markdown("### Quick Registration (Demo)")
     st.info(
-        "We could not auto-detect the profile for this CNIC."
-        " Please provide the minimum household details so the agents can continue."
+        "We don’t recognise this CNIC in the demo dataset."
+        " Please share household details so agents can guide you properly."
     )
-    with st.form("manual_profile"):
-        name = st.text_input("Name", value="")
-        city = st.text_input("City / District", value="")
-        province = st.text_input("Province", value="")
-        area = st.text_input("Area or tehsil", value="")
-        family_size = st.number_input("Family size", min_value=1, max_value=20, value=4)
-        income = st.number_input("Monthly income (PKR)", min_value=0, max_value=500000, value=45000, step=1000)
-        nser_score = st.number_input("NSER score", min_value=0, max_value=100, value=35)
-        sehat_card_eligible = st.selectbox("Sehat Card eligibility", ["Unknown", "Yes", "No"], index=0)
-        submitted = st.form_submit_button("Save household profile")
+    default_income = existing.get("income_range_label") if existing else _INCOME_RANGE_OPTIONS[0]
+    default_index = _INCOME_RANGE_OPTIONS.index(default_income) if default_income in _INCOME_RANGE_OPTIONS else 0
+    default_province = existing.get("province", "") if existing else ""
+    province_index = _PROVINCE_OPTIONS.index(default_province) if default_province in _PROVINCE_OPTIONS else 0
+    with st.form("quick_registration_form"):
+        family_size = st.number_input(
+            "How many people live in your household?",
+            min_value=1,
+            max_value=20,
+            value=int(existing.get("family_size", 4)) if existing else 4,
+        )
+        income_label = st.selectbox(
+            "Monthly household income (range)",
+            _INCOME_RANGE_OPTIONS,
+            index=default_index,
+            help="Approximate range helps us judge eligibility in demo mode.",
+        )
+        city = st.text_input(
+            "Which city/town/village do you live in?",
+            value=existing.get("city", "") if existing else "",
+        )
+        province = st.selectbox(
+            "Province (optional)",
+            _PROVINCE_OPTIONS,
+            index=province_index,
+        )
+        rural_or_urban = st.radio(
+            "Is this rural or urban?",
+            ("Rural", "Urban"),
+            index=0 if (existing or {}).get("rural_or_urban", "Rural") == "Rural" else 1,
+            horizontal=True,
+        )
+        submitted = st.form_submit_button("Save & Continue")
         if submitted:
-            st.session_state["citizen_profile"] = {
+            approx_income = _income_label_to_value(income_label)
+            profile = {
                 "cnic": st.session_state.get("cnic_entered", ""),
-                "name": name,
-                "city": city,
-                "district": city,
-                "province": province,
-                "area": area,
+                "name": existing.get("name") if existing else "New citizen",
                 "family_size": int(family_size),
-                "income_per_month_pkrs": int(income),
-                "nser_score": int(nser_score),
-                "sehat_card_eligible": sehat_card_eligible == "Yes",
+                "income_range_label": income_label,
+                "income_per_month_pkrs": approx_income,
+                "city": city.strip(),
+                "district": city.strip(),
+                "province": province or None,
+                "rural_or_urban": rural_or_urban,
+                "area": rural_or_urban,
+                "sehat_card_eligible": None,
             }
+            st.session_state["citizen_profile"] = profile
             st.session_state["profile_ready"] = True
             st.session_state["profile_known"] = False
-            st.success("Profile saved. Scroll down to chat with SehatBuddy.")
+            st.success("Details saved. You can now chat with SehatBuddy.")
 
 
 def _render_chat() -> None:
@@ -176,11 +239,17 @@ if st.button("Continue", type="primary"):
 
 if st.session_state.get("citizen_profile"):
     _profile_summary(st.session_state["citizen_profile"], st.session_state.get("profile_known", False))
+    if not st.session_state.get("profile_known"):
+        with st.expander("Update Quick Registration (Demo)"):
+            _render_quick_registration(st.session_state["citizen_profile"])
 elif st.session_state.get("cnic_entered"):
-    _render_unknown_form()
+    _render_quick_registration()
 
 if st.session_state.get("profile_ready"):
     _render_chat()
     _render_report()
 else:
-    st.info("Enter a CNIC above to unlock the SehatBuddy assistant.")
+    if st.session_state.get("cnic_entered"):
+        st.info("Complete the Quick Registration form above to unlock the SehatBuddy assistant.")
+    else:
+        st.info("Enter a CNIC above to unlock the SehatBuddy assistant.")

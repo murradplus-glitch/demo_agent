@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import asdict, dataclass
+import re
 from typing import Any
 
 from agentic.agents import (
@@ -148,7 +149,8 @@ class HealthcareMultiAgentSystem:
         citizen_profile: dict[str, Any] | None = None,
     ) -> HealthcareMultiAgentReport:
         retrieved_context = self._retrieve_context(patient_query)
-        profile = citizen_profile or self._default_profile()
+        profile = dict(citizen_profile) if citizen_profile else self._default_profile()
+        profile = self._apply_city_hint(profile, patient_query)
         initial_state = HealthcareGraphState(
             patient_query=patient_query,
             citizen_profile=profile,
@@ -217,6 +219,19 @@ class HealthcareMultiAgentSystem:
         severity = None
         if state.triage and state.triage.metadata:
             severity = state.triage.metadata.get("severity")
+        city = (state.citizen_profile.get("city") or "").strip()
+        if not city:
+            state.facility_finder = AgentOutput(
+                role=self.facility_finder_agent.name,
+                summary=(
+                    "I can’t recommend an exact facility yet because I don’t know your city or town. "
+                    "Please tell me your city (for example, 'Multan') so I can share the nearest BHU or hospital."
+                ),
+                evidence="Facility lookup paused until a city/town is provided.",
+                raw_model_output="Facility finder skipped due to missing city.",
+                metadata={"facility_options": [], "needs_city": True},
+            )
+            return state
         facilities = self.facility_finder_agent.recommend_facilities(
             state.citizen_profile,
             severity,
@@ -332,6 +347,40 @@ class HealthcareMultiAgentSystem:
             "preferred_language": "Urdu",
             "conditions": ["Asthma"],
         }
+
+    def _apply_city_hint(self, profile: dict[str, Any], patient_query: str) -> dict[str, Any]:
+        """Update the profile with a city if the citizen mentions it in the query."""
+
+        if (profile.get("city") or "").strip():
+            return profile
+        extracted = self._extract_city_from_query(patient_query)
+        if not extracted:
+            return profile
+        profile = dict(profile)
+        profile["city"] = extracted
+        profile.setdefault("district", extracted)
+        return profile
+
+    def _extract_city_from_query(self, patient_query: str) -> str | None:
+        lowered = patient_query.strip()
+        if not lowered:
+            return None
+        patterns = [
+            r"\bi live in\s+([A-Za-z\s]+)",
+            r"\bi am from\s+([A-Za-z\s]+)",
+            r"\bmy city is\s+([A-Za-z\s]+)",
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, lowered, flags=re.IGNORECASE)
+            if not match:
+                continue
+            candidate = match.group(1).strip()
+            candidate = re.split(r"\b(?:and|but|so|because)\b", candidate, maxsplit=1, flags=re.IGNORECASE)[0]
+            candidate = re.split(r"[,\.]+", candidate, maxsplit=1)[0]
+            candidate = candidate.strip().strip(",. !?")
+            if candidate:
+                return candidate.title()
+        return None
 
     def _retrieve_context(self, patient_query: str) -> RetrievedContext:
         return self.rag.retrieve(patient_query, top_k=self.settings.top_k)

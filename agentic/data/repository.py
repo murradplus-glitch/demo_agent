@@ -62,6 +62,9 @@ class HealthcareDataRepository:
         normalized_area = (area or "").strip().lower()
         severity_weight = 2 if (severity or "").lower() == "emergency" else 1
 
+        if not normalized_city and not normalized_area:
+            return []
+
         def score(row: dict[str, Any]) -> float:
             city_match = 1 if normalized_city and normalized_city in row.get("city", "").lower() else 0
             area_match = 1 if normalized_area and normalized_area in row.get("area", "").lower() else 0
