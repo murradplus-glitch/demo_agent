@@ -1,0 +1,502 @@
+
+applicant_id,nser_score,income_per_month_pkrs,region,family_size,eligible_for_sehat_sahulat,reason
+1,12,44131,Balochistan,8,No,Income or score above eligibility criteria
+2,32,101454,Azad Jammu & Kashmir,4,No,Income or score above eligibility criteria
+3,48,84103,Sindh,4,No,Income or score above eligibility criteria
+4,47,17597,Azad Jammu & Kashmir,4,No,Income or score above eligibility criteria
+5,37,31197,Balochistan,5,No,Income or score above eligibility criteria
+6,29,67447,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+7,43,60452,Punjab,8,No,Income or score above eligibility criteria
+8,32,111298,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+9,16,61899,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+10,10,10300,Islamabad,4,Yes,NSER score below threshold and low income
+11,34,93662,Sindh,7,No,Income or score above eligibility criteria
+12,48,98537,Sindh,5,No,Income or score above eligibility criteria
+13,38,87517,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+14,10,43103,Balochistan,5,No,Income or score above eligibility criteria
+15,10,110060,Balochistan,4,No,Income or score above eligibility criteria
+16,14,21749,Gilgit-Baltistan,4,Yes,NSER score below threshold and low income
+17,20,73562,Balochistan,4,No,Income or score above eligibility criteria
+18,41,11255,Islamabad,2,No,Income or score above eligibility criteria
+19,7,72294,Punjab,6,No,Income or score above eligibility criteria
+20,32,59135,Punjab,5,No,Income or score above eligibility criteria
+21,47,99412,Islamabad,8,No,Income or score above eligibility criteria
+22,21,51590,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+23,10,105748,Islamabad,2,No,Income or score above eligibility criteria
+24,12,102060,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+25,16,108045,Sindh,8,No,Income or score above eligibility criteria
+26,30,10932,Punjab,5,Yes,NSER score below threshold and low income
+27,50,44013,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+28,34,104267,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+29,44,110884,Khyber Pakhtunkhwa,4,No,Income or score above eligibility criteria
+30,16,32665,Sindh,2,No,Income or score above eligibility criteria
+31,43,38989,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+32,11,61858,Islamabad,2,No,Income or score above eligibility criteria
+33,5,56764,Punjab,2,No,Income or score above eligibility criteria
+34,15,90957,Balochistan,5,No,Income or score above eligibility criteria
+35,49,58096,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+36,43,100146,Balochistan,4,No,Income or score above eligibility criteria
+37,44,111578,Islamabad,4,No,Income or score above eligibility criteria
+38,49,93316,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+39,30,110465,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+40,13,22709,Punjab,3,Yes,NSER score below threshold and low income
+41,12,111950,Punjab,7,No,Income or score above eligibility criteria
+42,17,117592,Punjab,3,No,Income or score above eligibility criteria
+43,35,90016,Sindh,7,No,Income or score above eligibility criteria
+44,20,62119,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+45,39,30023,Punjab,4,No,Income or score above eligibility criteria
+46,34,24420,Balochistan,5,No,Income or score above eligibility criteria
+47,6,20264,Sindh,3,Yes,NSER score below threshold and low income
+48,49,63361,Balochistan,5,No,Income or score above eligibility criteria
+49,6,117695,Balochistan,6,No,Income or score above eligibility criteria
+50,20,31389,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+51,30,11674,Khyber Pakhtunkhwa,2,Yes,NSER score below threshold and low income
+52,11,87629,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+53,32,59484,Azad Jammu & Kashmir,5,No,Income or score above eligibility criteria
+54,42,83097,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+55,23,9851,Balochistan,5,Yes,NSER score below threshold and low income
+56,36,72286,Islamabad,7,No,Income or score above eligibility criteria
+57,44,93954,Azad Jammu & Kashmir,8,No,Income or score above eligibility criteria
+58,36,35396,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+59,38,7492,Balochistan,6,No,Income or score above eligibility criteria
+60,25,77516,Punjab,4,No,Income or score above eligibility criteria
+61,46,59675,Balochistan,2,No,Income or score above eligibility criteria
+62,36,86618,Gilgit-Baltistan,4,No,Income or score above eligibility criteria
+63,33,96424,Balochistan,2,No,Income or score above eligibility criteria
+64,15,42750,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+65,35,50068,Balochistan,3,No,Income or score above eligibility criteria
+66,37,33796,Islamabad,7,No,Income or score above eligibility criteria
+67,26,83918,Azad Jammu & Kashmir,8,No,Income or score above eligibility criteria
+68,50,91108,Balochistan,3,No,Income or score above eligibility criteria
+69,23,99764,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+70,31,114193,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+71,28,109329,Balochistan,8,No,Income or score above eligibility criteria
+72,15,86506,Sindh,4,No,Income or score above eligibility criteria
+73,49,103206,Punjab,7,No,Income or score above eligibility criteria
+74,35,21920,Sindh,3,No,Income or score above eligibility criteria
+75,15,84396,Balochistan,2,No,Income or score above eligibility criteria
+76,31,69713,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+77,18,77984,Punjab,2,No,Income or score above eligibility criteria
+78,27,39184,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+79,15,27900,Azad Jammu & Kashmir,8,Yes,NSER score below threshold and low income
+80,37,9190,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+81,26,61442,Punjab,6,No,Income or score above eligibility criteria
+82,19,20818,Islamabad,3,Yes,NSER score below threshold and low income
+83,36,38793,Khyber Pakhtunkhwa,8,No,Income or score above eligibility criteria
+84,27,105843,Punjab,8,No,Income or score above eligibility criteria
+85,40,40060,Sindh,8,No,Income or score above eligibility criteria
+86,49,119517,Islamabad,6,No,Income or score above eligibility criteria
+87,47,18650,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+88,33,109724,Balochistan,8,No,Income or score above eligibility criteria
+89,12,18879,Azad Jammu & Kashmir,6,Yes,NSER score below threshold and low income
+90,44,107518,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+91,40,10501,Islamabad,2,No,Income or score above eligibility criteria
+92,15,87565,Punjab,8,No,Income or score above eligibility criteria
+93,18,52400,Sindh,7,No,Income or score above eligibility criteria
+94,23,97820,Balochistan,8,No,Income or score above eligibility criteria
+95,37,70325,Gilgit-Baltistan,8,No,Income or score above eligibility criteria
+96,11,25223,Gilgit-Baltistan,4,Yes,NSER score below threshold and low income
+97,26,112369,Sindh,2,No,Income or score above eligibility criteria
+98,17,62554,Balochistan,8,No,Income or score above eligibility criteria
+99,5,37154,Azad Jammu & Kashmir,8,No,Income or score above eligibility criteria
+100,35,49737,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+101,15,16171,Khyber Pakhtunkhwa,4,Yes,NSER score below threshold and low income
+102,50,103939,Balochistan,4,No,Income or score above eligibility criteria
+103,45,92162,Sindh,3,No,Income or score above eligibility criteria
+104,38,60275,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+105,13,110089,Balochistan,5,No,Income or score above eligibility criteria
+106,31,65129,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+107,48,52418,Punjab,5,No,Income or score above eligibility criteria
+108,14,105945,Punjab,7,No,Income or score above eligibility criteria
+109,38,14120,Punjab,4,No,Income or score above eligibility criteria
+110,25,57645,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+111,32,13056,Balochistan,8,Yes,NSER score below threshold and low income
+112,7,91530,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+113,41,12577,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+114,47,119794,Islamabad,4,No,Income or score above eligibility criteria
+115,31,57691,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+116,40,119497,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+117,25,50109,Punjab,8,No,Income or score above eligibility criteria
+118,22,74178,Islamabad,3,No,Income or score above eligibility criteria
+119,49,57944,Balochistan,7,No,Income or score above eligibility criteria
+120,18,76358,Islamabad,8,No,Income or score above eligibility criteria
+121,44,90463,Balochistan,7,No,Income or score above eligibility criteria
+122,27,111408,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+123,30,106633,Sindh,4,No,Income or score above eligibility criteria
+124,10,9845,Islamabad,4,Yes,NSER score below threshold and low income
+125,29,100040,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+126,13,73219,Islamabad,4,No,Income or score above eligibility criteria
+127,18,17166,Islamabad,6,Yes,NSER score below threshold and low income
+128,24,73332,Khyber Pakhtunkhwa,8,No,Income or score above eligibility criteria
+129,45,25975,Punjab,2,No,Income or score above eligibility criteria
+130,39,82660,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+131,24,100225,Balochistan,6,No,Income or score above eligibility criteria
+132,12,100942,Punjab,8,No,Income or score above eligibility criteria
+133,28,39046,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+134,27,21228,Punjab,8,Yes,NSER score below threshold and low income
+135,46,21351,Balochistan,4,No,Income or score above eligibility criteria
+136,41,101581,Punjab,5,No,Income or score above eligibility criteria
+137,26,35945,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+138,42,79133,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+139,47,74899,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+140,19,50919,Khyber Pakhtunkhwa,4,No,Income or score above eligibility criteria
+141,47,107863,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+142,41,93137,Sindh,7,No,Income or score above eligibility criteria
+143,29,73113,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+144,11,47971,Islamabad,6,No,Income or score above eligibility criteria
+145,17,112851,Azad Jammu & Kashmir,4,No,Income or score above eligibility criteria
+146,34,17843,Sindh,7,No,Income or score above eligibility criteria
+147,32,113584,Balochistan,2,No,Income or score above eligibility criteria
+148,10,13151,Balochistan,3,Yes,NSER score below threshold and low income
+149,35,33152,Balochistan,2,No,Income or score above eligibility criteria
+150,28,93712,Islamabad,5,No,Income or score above eligibility criteria
+151,42,78265,Islamabad,8,No,Income or score above eligibility criteria
+152,30,119296,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+153,36,88422,Balochistan,5,No,Income or score above eligibility criteria
+154,49,69165,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+155,15,23919,Islamabad,3,Yes,NSER score below threshold and low income
+156,36,98211,Balochistan,3,No,Income or score above eligibility criteria
+157,50,72264,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+158,12,96025,Sindh,5,No,Income or score above eligibility criteria
+159,35,9273,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+160,40,53409,Punjab,6,No,Income or score above eligibility criteria
+161,31,19461,Punjab,4,Yes,NSER score below threshold and low income
+162,41,42957,Punjab,6,No,Income or score above eligibility criteria
+163,14,20432,Khyber Pakhtunkhwa,4,Yes,NSER score below threshold and low income
+164,28,44748,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+165,6,108704,Sindh,3,No,Income or score above eligibility criteria
+166,42,60280,Punjab,4,No,Income or score above eligibility criteria
+167,23,33256,Sindh,8,No,Income or score above eligibility criteria
+168,36,5273,Punjab,6,No,Income or score above eligibility criteria
+169,27,13855,Azad Jammu & Kashmir,2,Yes,NSER score below threshold and low income
+170,31,68068,Islamabad,4,No,Income or score above eligibility criteria
+171,41,64293,Khyber Pakhtunkhwa,8,No,Income or score above eligibility criteria
+172,29,67289,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+173,43,22407,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+174,37,88422,Balochistan,8,No,Income or score above eligibility criteria
+175,33,92453,Balochistan,3,No,Income or score above eligibility criteria
+176,25,16706,Azad Jammu & Kashmir,6,Yes,NSER score below threshold and low income
+177,47,86735,Balochistan,5,No,Income or score above eligibility criteria
+178,19,56825,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+179,7,92876,Balochistan,7,No,Income or score above eligibility criteria
+180,22,89661,Punjab,8,No,Income or score above eligibility criteria
+181,15,97695,Punjab,6,No,Income or score above eligibility criteria
+182,45,109354,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+183,24,78537,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+184,46,78315,Punjab,3,No,Income or score above eligibility criteria
+185,44,76019,Islamabad,8,No,Income or score above eligibility criteria
+186,8,79743,Islamabad,3,No,Income or score above eligibility criteria
+187,35,70881,Punjab,2,No,Income or score above eligibility criteria
+188,47,74711,Sindh,2,No,Income or score above eligibility criteria
+189,22,108121,Sindh,3,No,Income or score above eligibility criteria
+190,50,114958,Islamabad,5,No,Income or score above eligibility criteria
+191,10,110764,Islamabad,6,No,Income or score above eligibility criteria
+192,25,57664,Islamabad,2,No,Income or score above eligibility criteria
+193,36,117980,Punjab,4,No,Income or score above eligibility criteria
+194,32,28659,Balochistan,2,Yes,NSER score below threshold and low income
+195,38,46599,Balochistan,4,No,Income or score above eligibility criteria
+196,10,20026,Punjab,6,Yes,NSER score below threshold and low income
+197,15,42401,Sindh,3,No,Income or score above eligibility criteria
+198,21,105703,Punjab,3,No,Income or score above eligibility criteria
+199,24,58382,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+200,8,85540,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+201,6,98493,Punjab,4,No,Income or score above eligibility criteria
+202,29,17942,Khyber Pakhtunkhwa,3,Yes,NSER score below threshold and low income
+203,31,47495,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+204,12,11799,Sindh,3,Yes,NSER score below threshold and low income
+205,43,81812,Sindh,5,No,Income or score above eligibility criteria
+206,37,103617,Islamabad,5,No,Income or score above eligibility criteria
+207,12,40296,Punjab,4,No,Income or score above eligibility criteria
+208,34,77498,Balochistan,2,No,Income or score above eligibility criteria
+209,35,8788,Balochistan,7,No,Income or score above eligibility criteria
+210,19,7440,Khyber Pakhtunkhwa,6,Yes,NSER score below threshold and low income
+211,42,93486,Punjab,3,No,Income or score above eligibility criteria
+212,40,90400,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+213,24,79481,Balochistan,5,No,Income or score above eligibility criteria
+214,10,115923,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+215,18,107613,Sindh,4,No,Income or score above eligibility criteria
+216,39,27044,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+217,39,60542,Islamabad,5,No,Income or score above eligibility criteria
+218,7,5131,Azad Jammu & Kashmir,5,Yes,NSER score below threshold and low income
+219,44,42912,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+220,5,12887,Balochistan,4,Yes,NSER score below threshold and low income
+221,43,37884,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+222,29,51061,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+223,18,81697,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+224,23,10961,Sindh,7,Yes,NSER score below threshold and low income
+225,39,78804,Punjab,4,No,Income or score above eligibility criteria
+226,10,56813,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+227,13,100036,Islamabad,4,No,Income or score above eligibility criteria
+228,32,32636,Islamabad,6,No,Income or score above eligibility criteria
+229,25,94404,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+230,21,103657,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+231,22,37234,Gilgit-Baltistan,4,No,Income or score above eligibility criteria
+232,26,32606,Balochistan,6,No,Income or score above eligibility criteria
+233,26,7080,Gilgit-Baltistan,3,Yes,NSER score below threshold and low income
+234,46,5268,Islamabad,5,No,Income or score above eligibility criteria
+235,5,6255,Gilgit-Baltistan,3,Yes,NSER score below threshold and low income
+236,31,77848,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+237,36,104937,Balochistan,6,No,Income or score above eligibility criteria
+238,10,108193,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+239,9,75601,Punjab,8,No,Income or score above eligibility criteria
+240,47,63350,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+241,27,111532,Balochistan,8,No,Income or score above eligibility criteria
+242,43,51919,Balochistan,3,No,Income or score above eligibility criteria
+243,49,6105,Punjab,5,No,Income or score above eligibility criteria
+244,28,30295,Balochistan,2,No,Income or score above eligibility criteria
+245,19,102405,Punjab,8,No,Income or score above eligibility criteria
+246,22,94201,Gilgit-Baltistan,4,No,Income or score above eligibility criteria
+247,17,16792,Azad Jammu & Kashmir,6,Yes,NSER score below threshold and low income
+248,45,44738,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+249,19,35704,Balochistan,4,No,Income or score above eligibility criteria
+250,7,41799,Balochistan,7,No,Income or score above eligibility criteria
+251,50,84433,Sindh,2,No,Income or score above eligibility criteria
+252,17,112626,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+253,12,119021,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+254,37,69751,Sindh,6,No,Income or score above eligibility criteria
+255,17,91486,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+256,48,94441,Islamabad,6,No,Income or score above eligibility criteria
+257,16,13566,Islamabad,3,Yes,NSER score below threshold and low income
+258,9,21702,Khyber Pakhtunkhwa,6,Yes,NSER score below threshold and low income
+259,19,73561,Gilgit-Baltistan,8,No,Income or score above eligibility criteria
+260,22,30146,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+261,6,95831,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+262,44,38150,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+263,34,5256,Balochistan,7,No,Income or score above eligibility criteria
+264,48,90200,Punjab,8,No,Income or score above eligibility criteria
+265,25,61694,Azad Jammu & Kashmir,5,No,Income or score above eligibility criteria
+266,22,20953,Gilgit-Baltistan,6,Yes,NSER score below threshold and low income
+267,34,69955,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+268,7,99531,Sindh,2,No,Income or score above eligibility criteria
+269,22,60058,Islamabad,5,No,Income or score above eligibility criteria
+270,25,5676,Balochistan,3,Yes,NSER score below threshold and low income
+271,26,15722,Islamabad,8,Yes,NSER score below threshold and low income
+272,6,101658,Sindh,7,No,Income or score above eligibility criteria
+273,32,14757,Sindh,3,Yes,NSER score below threshold and low income
+274,15,48152,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+275,45,86958,Punjab,2,No,Income or score above eligibility criteria
+276,35,61616,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+277,42,109493,Gilgit-Baltistan,4,No,Income or score above eligibility criteria
+278,21,37394,Punjab,5,No,Income or score above eligibility criteria
+279,20,49669,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+280,26,73114,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+281,9,106679,Islamabad,6,No,Income or score above eligibility criteria
+282,33,105151,Punjab,7,No,Income or score above eligibility criteria
+283,33,80882,Punjab,2,No,Income or score above eligibility criteria
+284,8,9370,Balochistan,4,Yes,NSER score below threshold and low income
+285,49,13523,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+286,8,110170,Balochistan,2,No,Income or score above eligibility criteria
+287,24,85050,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+288,9,18346,Gilgit-Baltistan,2,Yes,NSER score below threshold and low income
+289,40,11842,Khyber Pakhtunkhwa,8,No,Income or score above eligibility criteria
+290,29,57649,Punjab,6,No,Income or score above eligibility criteria
+291,31,35554,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+292,47,86789,Punjab,5,No,Income or score above eligibility criteria
+293,29,65844,Azad Jammu & Kashmir,5,No,Income or score above eligibility criteria
+294,44,86163,Punjab,4,No,Income or score above eligibility criteria
+295,46,93575,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+296,34,72792,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+297,17,19156,Punjab,2,Yes,NSER score below threshold and low income
+298,43,98493,Punjab,6,No,Income or score above eligibility criteria
+299,17,80132,Sindh,7,No,Income or score above eligibility criteria
+300,37,38591,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+301,35,99977,Islamabad,5,No,Income or score above eligibility criteria
+302,16,36870,Sindh,8,No,Income or score above eligibility criteria
+303,7,12928,Sindh,4,Yes,NSER score below threshold and low income
+304,42,62127,Islamabad,7,No,Income or score above eligibility criteria
+305,27,45788,Islamabad,6,No,Income or score above eligibility criteria
+306,14,24321,Balochistan,4,Yes,NSER score below threshold and low income
+307,43,49944,Khyber Pakhtunkhwa,4,No,Income or score above eligibility criteria
+308,5,72853,Islamabad,7,No,Income or score above eligibility criteria
+309,48,23953,Punjab,3,No,Income or score above eligibility criteria
+310,37,112372,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+311,8,60320,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+312,17,88958,Sindh,8,No,Income or score above eligibility criteria
+313,9,49767,Sindh,7,No,Income or score above eligibility criteria
+314,35,96066,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+315,43,95756,Khyber Pakhtunkhwa,8,No,Income or score above eligibility criteria
+316,42,79199,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+317,24,59879,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+318,11,64546,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+319,36,33757,Punjab,7,No,Income or score above eligibility criteria
+320,19,95861,Sindh,5,No,Income or score above eligibility criteria
+321,44,32936,Sindh,5,No,Income or score above eligibility criteria
+322,26,110810,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+323,18,57469,Sindh,8,No,Income or score above eligibility criteria
+324,5,52555,Punjab,2,No,Income or score above eligibility criteria
+325,27,8934,Islamabad,2,Yes,NSER score below threshold and low income
+326,14,43086,Balochistan,3,No,Income or score above eligibility criteria
+327,45,81767,Azad Jammu & Kashmir,4,No,Income or score above eligibility criteria
+328,7,8890,Sindh,3,Yes,NSER score below threshold and low income
+329,23,27825,Sindh,4,Yes,NSER score below threshold and low income
+330,16,49540,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+331,20,28401,Sindh,2,Yes,NSER score below threshold and low income
+332,16,115478,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+333,6,113979,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+334,29,90835,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+335,26,32556,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+336,20,53449,Azad Jammu & Kashmir,4,No,Income or score above eligibility criteria
+337,47,27460,Islamabad,8,No,Income or score above eligibility criteria
+338,44,61848,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+339,12,23931,Sindh,8,Yes,NSER score below threshold and low income
+340,17,30124,Islamabad,5,No,Income or score above eligibility criteria
+341,49,54054,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+342,32,88380,Sindh,2,No,Income or score above eligibility criteria
+343,44,81981,Sindh,8,No,Income or score above eligibility criteria
+344,39,43559,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+345,25,37397,Punjab,7,No,Income or score above eligibility criteria
+346,22,119406,Sindh,8,No,Income or score above eligibility criteria
+347,37,81556,Balochistan,3,No,Income or score above eligibility criteria
+348,10,107847,Balochistan,8,No,Income or score above eligibility criteria
+349,47,85594,Punjab,3,No,Income or score above eligibility criteria
+350,37,55871,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+351,37,54055,Balochistan,6,No,Income or score above eligibility criteria
+352,34,28461,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+353,28,73875,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+354,50,69853,Balochistan,4,No,Income or score above eligibility criteria
+355,42,57552,Gilgit-Baltistan,8,No,Income or score above eligibility criteria
+356,42,90162,Punjab,3,No,Income or score above eligibility criteria
+357,19,31607,Balochistan,8,No,Income or score above eligibility criteria
+358,20,56891,Sindh,4,No,Income or score above eligibility criteria
+359,32,54425,Islamabad,3,No,Income or score above eligibility criteria
+360,28,38361,Islamabad,2,No,Income or score above eligibility criteria
+361,13,103516,Punjab,4,No,Income or score above eligibility criteria
+362,33,73002,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+363,42,10392,Balochistan,6,No,Income or score above eligibility criteria
+364,44,49089,Balochistan,5,No,Income or score above eligibility criteria
+365,34,61689,Balochistan,4,No,Income or score above eligibility criteria
+366,36,46552,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+367,6,28536,Balochistan,3,Yes,NSER score below threshold and low income
+368,21,89587,Punjab,4,No,Income or score above eligibility criteria
+369,10,43603,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+370,37,76650,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+371,22,34850,Punjab,2,No,Income or score above eligibility criteria
+372,9,52216,Punjab,6,No,Income or score above eligibility criteria
+373,17,48746,Sindh,7,No,Income or score above eligibility criteria
+374,26,37771,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+375,48,115814,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+376,50,84171,Sindh,8,No,Income or score above eligibility criteria
+377,50,101969,Islamabad,4,No,Income or score above eligibility criteria
+378,5,105935,Khyber Pakhtunkhwa,4,No,Income or score above eligibility criteria
+379,27,107646,Balochistan,5,No,Income or score above eligibility criteria
+380,42,104327,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+381,35,90733,Islamabad,8,No,Income or score above eligibility criteria
+382,14,118438,Balochistan,3,No,Income or score above eligibility criteria
+383,19,99809,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+384,35,35634,Islamabad,6,No,Income or score above eligibility criteria
+385,40,104302,Balochistan,7,No,Income or score above eligibility criteria
+386,34,49650,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+387,25,115860,Sindh,5,No,Income or score above eligibility criteria
+388,49,59747,Sindh,5,No,Income or score above eligibility criteria
+389,33,116797,Islamabad,2,No,Income or score above eligibility criteria
+390,28,23212,Islamabad,8,Yes,NSER score below threshold and low income
+391,13,45051,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+392,36,111220,Gilgit-Baltistan,8,No,Income or score above eligibility criteria
+393,27,49541,Sindh,5,No,Income or score above eligibility criteria
+394,32,94884,Azad Jammu & Kashmir,5,No,Income or score above eligibility criteria
+395,49,75464,Khyber Pakhtunkhwa,4,No,Income or score above eligibility criteria
+396,42,8046,Islamabad,8,No,Income or score above eligibility criteria
+397,7,23236,Sindh,4,Yes,NSER score below threshold and low income
+398,41,87554,Azad Jammu & Kashmir,6,No,Income or score above eligibility criteria
+399,43,80219,Azad Jammu & Kashmir,5,No,Income or score above eligibility criteria
+400,29,31765,Balochistan,2,No,Income or score above eligibility criteria
+401,39,55650,Sindh,5,No,Income or score above eligibility criteria
+402,11,48101,Islamabad,5,No,Income or score above eligibility criteria
+403,45,44930,Punjab,3,No,Income or score above eligibility criteria
+404,11,93458,Islamabad,3,No,Income or score above eligibility criteria
+405,7,113327,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+406,36,8517,Sindh,3,No,Income or score above eligibility criteria
+407,9,55579,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+408,19,43155,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+409,9,64593,Punjab,4,No,Income or score above eligibility criteria
+410,38,6447,Sindh,4,No,Income or score above eligibility criteria
+411,31,56262,Sindh,2,No,Income or score above eligibility criteria
+412,13,75313,Balochistan,5,No,Income or score above eligibility criteria
+413,9,55986,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+414,13,119091,Sindh,4,No,Income or score above eligibility criteria
+415,32,112203,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+416,35,25811,Islamabad,6,No,Income or score above eligibility criteria
+417,24,82003,Sindh,6,No,Income or score above eligibility criteria
+418,50,94762,Balochistan,4,No,Income or score above eligibility criteria
+419,17,5975,Sindh,5,Yes,NSER score below threshold and low income
+420,9,113079,Balochistan,6,No,Income or score above eligibility criteria
+421,20,73925,Khyber Pakhtunkhwa,6,No,Income or score above eligibility criteria
+422,36,65319,Balochistan,6,No,Income or score above eligibility criteria
+423,7,101638,Punjab,4,No,Income or score above eligibility criteria
+424,46,64809,Khyber Pakhtunkhwa,7,No,Income or score above eligibility criteria
+425,50,108854,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+426,44,112928,Azad Jammu & Kashmir,8,No,Income or score above eligibility criteria
+427,16,59401,Sindh,3,No,Income or score above eligibility criteria
+428,44,101107,Balochistan,5,No,Income or score above eligibility criteria
+429,29,91386,Sindh,7,No,Income or score above eligibility criteria
+430,41,17521,Balochistan,7,No,Income or score above eligibility criteria
+431,7,36417,Azad Jammu & Kashmir,3,No,Income or score above eligibility criteria
+432,22,87324,Islamabad,4,No,Income or score above eligibility criteria
+433,47,13748,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+434,18,69682,Balochistan,8,No,Income or score above eligibility criteria
+435,40,20889,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+436,11,71112,Azad Jammu & Kashmir,8,No,Income or score above eligibility criteria
+437,25,58752,Balochistan,3,No,Income or score above eligibility criteria
+438,21,32180,Islamabad,2,No,Income or score above eligibility criteria
+439,34,8501,Punjab,7,No,Income or score above eligibility criteria
+440,49,93555,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+441,29,50043,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+442,17,56992,Punjab,2,No,Income or score above eligibility criteria
+443,21,20031,Gilgit-Baltistan,3,Yes,NSER score below threshold and low income
+444,25,92856,Gilgit-Baltistan,5,No,Income or score above eligibility criteria
+445,36,65470,Punjab,2,No,Income or score above eligibility criteria
+446,40,91117,Sindh,7,No,Income or score above eligibility criteria
+447,33,23383,Balochistan,8,No,Income or score above eligibility criteria
+448,22,115305,Sindh,3,No,Income or score above eligibility criteria
+449,6,84559,Punjab,3,No,Income or score above eligibility criteria
+450,23,21272,Islamabad,7,Yes,NSER score below threshold and low income
+451,30,27079,Punjab,7,Yes,NSER score below threshold and low income
+452,5,93785,Khyber Pakhtunkhwa,3,No,Income or score above eligibility criteria
+453,33,51935,Sindh,3,No,Income or score above eligibility criteria
+454,50,9514,Gilgit-Baltistan,6,No,Income or score above eligibility criteria
+455,18,62941,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+456,45,111366,Islamabad,7,No,Income or score above eligibility criteria
+457,47,98901,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+458,29,95485,Khyber Pakhtunkhwa,5,No,Income or score above eligibility criteria
+459,8,83407,Punjab,2,No,Income or score above eligibility criteria
+460,29,105547,Sindh,3,No,Income or score above eligibility criteria
+461,28,36265,Sindh,2,No,Income or score above eligibility criteria
+462,6,60270,Punjab,2,No,Income or score above eligibility criteria
+463,26,112548,Sindh,7,No,Income or score above eligibility criteria
+464,47,13280,Sindh,2,No,Income or score above eligibility criteria
+465,47,27004,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+466,7,59484,Islamabad,2,No,Income or score above eligibility criteria
+467,25,47294,Islamabad,7,No,Income or score above eligibility criteria
+468,17,86877,Sindh,6,No,Income or score above eligibility criteria
+469,30,61083,Punjab,3,No,Income or score above eligibility criteria
+470,18,18878,Khyber Pakhtunkhwa,4,Yes,NSER score below threshold and low income
+471,16,6965,Balochistan,7,Yes,NSER score below threshold and low income
+472,25,6570,Balochistan,3,Yes,NSER score below threshold and low income
+473,34,33848,Punjab,7,No,Income or score above eligibility criteria
+474,22,90189,Islamabad,4,No,Income or score above eligibility criteria
+475,7,13825,Sindh,5,Yes,NSER score below threshold and low income
+476,24,105603,Islamabad,5,No,Income or score above eligibility criteria
+477,11,98392,Islamabad,8,No,Income or score above eligibility criteria
+478,41,27473,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+479,43,47513,Gilgit-Baltistan,7,No,Income or score above eligibility criteria
+480,29,93853,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+481,13,48522,Sindh,7,No,Income or score above eligibility criteria
+482,49,46676,Azad Jammu & Kashmir,7,No,Income or score above eligibility criteria
+483,35,13849,Khyber Pakhtunkhwa,2,No,Income or score above eligibility criteria
+484,43,81681,Balochistan,5,No,Income or score above eligibility criteria
+485,37,88963,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+486,37,82000,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+487,19,7780,Islamabad,8,Yes,NSER score below threshold and low income
+488,12,45481,Sindh,7,No,Income or score above eligibility criteria
+489,32,104253,Sindh,6,No,Income or score above eligibility criteria
+490,10,12854,Sindh,4,Yes,NSER score below threshold and low income
+491,36,43877,Sindh,3,No,Income or score above eligibility criteria
+492,29,31789,Gilgit-Baltistan,2,No,Income or score above eligibility criteria
+493,20,100067,Islamabad,5,No,Income or score above eligibility criteria
+494,26,22598,Khyber Pakhtunkhwa,4,Yes,NSER score below threshold and low income
+495,46,108149,Azad Jammu & Kashmir,2,No,Income or score above eligibility criteria
+496,38,108780,Balochistan,7,No,Income or score above eligibility criteria
+497,23,103376,Punjab,3,No,Income or score above eligibility criteria
+498,26,49922,Sindh,3,No,Income or score above eligibility criteria
+499,39,12087,Gilgit-Baltistan,3,No,Income or score above eligibility criteria
+500,48,96262,Gilgit-Baltistan,3,No,Income or score above eligibility criteria

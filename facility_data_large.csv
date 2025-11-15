@@ -1,0 +1,502 @@
+
+facility_id,name,city,area,doctors_available,address,contact
+1,District Hospital Sialkot 1,Sialkot,Ugoki Road,290,"266 Ugoki Road, Sialkot",07429671756
+2,General Hospital Multan 2,Multan,Boson Road,489,"83 Boson Road, Multan",05674680715
+3,General Hospital Quetta 3,Quetta,Samungli Road,445,"207 Samungli Road, Quetta",08087603859
+4,General Hospital Hyderabad 4,Hyderabad,Hali Road,154,"137 Hali Road, Hyderabad",08247710932
+5,General Hospital Quetta 5,Quetta,Hazara Town,332,"209 Hazara Town, Quetta",01317127484
+6,Medical Centre Faisalabad 6,Faisalabad,Peoples Colony,174,"234 Peoples Colony, Faisalabad",08263982146
+7,BHU Multan 7,Multan,Kalma Chowk,470,"2 Kalma Chowk, Multan",04499727875
+8,Clinic Multan 8,Multan,Kalma Chowk,243,"234 Kalma Chowk, Multan",05339636057
+9,District Hospital Faisalabad 9,Faisalabad,Peoples Colony,303,"19 Peoples Colony, Faisalabad",02895171870
+10,District Hospital Islamabad 10,Islamabad,Blue Area,88,"241 Blue Area, Islamabad",04596158657
+11,Clinic Rawalpindi 11,Rawalpindi,Murree Road,85,"121 Murree Road, Rawalpindi",04316117240
+12,General Hospital Karachi 12,Karachi,North Nazimabad,200,"184 North Nazimabad, Karachi",05623869222
+13,Medical Centre Lahore 13,Lahore,DHA,367,"124 DHA, Lahore",07923747407
+14,District Hospital Quetta 14,Quetta,Hazara Town,87,"227 Hazara Town, Quetta",05946474367
+15,Medical Centre Lahore 15,Lahore,Gulberg,342,"184 Gulberg, Lahore",09440640909
+16,District Hospital Hyderabad 16,Hyderabad,Tando Wali Muhammad,360,"181 Tando Wali Muhammad, Hyderabad",03394210470
+17,District Hospital Sialkot 17,Sialkot,Cantonment,96,"152 Cantonment, Sialkot",05623285884
+18,Medical Centre Islamabad 18,Islamabad,I-8,462,"152 I-8, Islamabad",05171236851
+19,BHU Faisalabad 19,Faisalabad,Satiana Road,324,"64 Satiana Road, Faisalabad",07549651370
+20,BHU Sialkot 20,Sialkot,Hajipura,362,"114 Hajipura, Sialkot",01746120047
+21,District Hospital Lahore 21,Lahore,Ferozpur Road,325,"70 Ferozpur Road, Lahore",06758692617
+22,BHU Sialkot 22,Sialkot,Model Town,66,"190 Model Town, Sialkot",03773515850
+23,District Hospital Faisalabad 23,Faisalabad,Clock Tower,112,"233 Clock Tower, Faisalabad",01390053293
+24,District Hospital Lahore 24,Lahore,DHA,350,"111 DHA, Lahore",03529042284
+25,General Hospital Islamabad 25,Islamabad,F-8,117,"8 F-8, Islamabad",05395024026
+26,General Hospital Rawalpindi 26,Rawalpindi,Murree Road,293,"230 Murree Road, Rawalpindi",05891783908
+27,General Hospital Quetta 27,Quetta,Cantt,81,"246 Cantt, Quetta",06617711592
+28,BHU Lahore 28,Lahore,Gulberg,369,"300 Gulberg, Lahore",08569847896
+29,Clinic Lahore 29,Lahore,Ferozpur Road,419,"111 Ferozpur Road, Lahore",06736576615
+30,BHU Faisalabad 30,Faisalabad,Clock Tower,241,"79 Clock Tower, Faisalabad",07111161528
+31,Clinic Karachi 31,Karachi,F.B. Area,337,"169 F.B. Area, Karachi",01656049451
+32,District Hospital Sialkot 32,Sialkot,Hajipura,129,"247 Hajipura, Sialkot",03158514936
+33,Clinic Rawalpindi 33,Rawalpindi,Sadar,395,"286 Sadar, Rawalpindi",00940244550
+34,Clinic Islamabad 34,Islamabad,G-9,386,"206 G-9, Islamabad",01201836675
+35,BHU Islamabad 35,Islamabad,I-8,419,"167 I-8, Islamabad",09910229014
+36,Medical Centre Hyderabad 36,Hyderabad,Hali Road,360,"227 Hali Road, Hyderabad",06438156149
+37,BHU Hyderabad 37,Hyderabad,Unit 7,73,"113 Unit 7, Hyderabad",06900343244
+38,General Hospital Multan 38,Multan,Nishtar Road,304,"221 Nishtar Road, Multan",02268388516
+39,General Hospital Karachi 39,Karachi,Clifton,285,"40 Clifton, Karachi",05969664160
+40,Clinic Multan 40,Multan,Shujabad Road,285,"186 Shujabad Road, Multan",01613696816
+41,District Hospital Quetta 41,Quetta,Samungli Road,220,"87 Samungli Road, Quetta",01818835523
+42,BHU Lahore 42,Lahore,Gulberg,151,"89 Gulberg, Lahore",09212779979
+43,BHU Sialkot 43,Sialkot,Cantonment,127,"226 Cantonment, Sialkot",01774490581
+44,Medical Centre Quetta 44,Quetta,Cantt,69,"30 Cantt, Quetta",05411998679
+45,Medical Centre Rawalpindi 45,Rawalpindi,Murree Road,464,"293 Murree Road, Rawalpindi",03597820715
+46,District Hospital Lahore 46,Lahore,DHA,70,"127 DHA, Lahore",07788925546
+47,Clinic Faisalabad 47,Faisalabad,Clock Tower,76,"172 Clock Tower, Faisalabad",01518644925
+48,District Hospital Lahore 48,Lahore,DHA,229,"159 DHA, Lahore",06291486528
+49,Clinic Lahore 49,Lahore,Model Town,235,"10 Model Town, Lahore",05423573322
+50,General Hospital Lahore 50,Lahore,Johar Town,309,"277 Johar Town, Lahore",08059296222
+51,Medical Centre Sialkot 51,Sialkot,Paris Road,72,"211 Paris Road, Sialkot",05379473834
+52,BHU Hyderabad 52,Hyderabad,Qasimabad,397,"293 Qasimabad, Hyderabad",07746886239
+53,General Hospital Islamabad 53,Islamabad,I-8,378,"247 I-8, Islamabad",05818141247
+54,Medical Centre Rawalpindi 54,Rawalpindi,Peshawar Road,96,"114 Peshawar Road, Rawalpindi",07506068536
+55,District Hospital Lahore 55,Lahore,Johar Town,64,"164 Johar Town, Lahore",01522047277
+56,General Hospital Sialkot 56,Sialkot,Ugoki Road,59,"132 Ugoki Road, Sialkot",03289861434
+57,District Hospital Lahore 57,Lahore,Ferozpur Road,264,"235 Ferozpur Road, Lahore",01179808932
+58,General Hospital Quetta 58,Quetta,Cantt,364,"181 Cantt, Quetta",03962185188
+59,Clinic Rawalpindi 59,Rawalpindi,Sadar,60,"200 Sadar, Rawalpindi",07065405153
+60,BHU Lahore 60,Lahore,DHA,118,"23 DHA, Lahore",05852772217
+61,District Hospital Karachi 61,Karachi,North Nazimabad,72,"103 North Nazimabad, Karachi",00548687403
+62,General Hospital Quetta 62,Quetta,Samungli Road,493,"170 Samungli Road, Quetta",04156676527
+63,Clinic Hyderabad 63,Hyderabad,Tando Wali Muhammad,186,"43 Tando Wali Muhammad, Hyderabad",06169284511
+64,BHU Multan 64,Multan,Boson Road,278,"219 Boson Road, Multan",02757059640
+65,BHU Lahore 65,Lahore,Model Town,312,"82 Model Town, Lahore",00297021355
+66,General Hospital Faisalabad 66,Faisalabad,D Ground,359,"79 D Ground, Faisalabad",07557192856
+67,District Hospital Multan 67,Multan,Boson Road,108,"14 Boson Road, Multan",02786814473
+68,Medical Centre Sialkot 68,Sialkot,Cantonment,152,"63 Cantonment, Sialkot",02172715518
+69,BHU Rawalpindi 69,Rawalpindi,Satellite Town,485,"81 Satellite Town, Rawalpindi",02583132370
+70,Clinic Multan 70,Multan,Kalma Chowk,238,"240 Kalma Chowk, Multan",08291146786
+71,General Hospital Faisalabad 71,Faisalabad,D Ground,114,"163 D Ground, Faisalabad",01778528922
+72,General Hospital Faisalabad 72,Faisalabad,D Ground,475,"64 D Ground, Faisalabad",08242253584
+73,District Hospital Lahore 73,Lahore,Johar Town,375,"283 Johar Town, Lahore",04249818299
+74,Clinic Islamabad 74,Islamabad,G-9,418,"173 G-9, Islamabad",09001094396
+75,Medical Centre Sialkot 75,Sialkot,Ugoki Road,371,"280 Ugoki Road, Sialkot",04473647102
+76,Medical Centre Hyderabad 76,Hyderabad,Hali Road,287,"105 Hali Road, Hyderabad",05925556258
+77,BHU Rawalpindi 77,Rawalpindi,Murree Road,173,"239 Murree Road, Rawalpindi",01473210469
+78,District Hospital Faisalabad 78,Faisalabad,Canal Road,466,"168 Canal Road, Faisalabad",09532787747
+79,Medical Centre Karachi 79,Karachi,Saddar,308,"235 Saddar, Karachi",03395004797
+80,General Hospital Quetta 80,Quetta,Hazara Town,483,"56 Hazara Town, Quetta",06245650609
+81,BHU Rawalpindi 81,Rawalpindi,Peshawar Road,333,"148 Peshawar Road, Rawalpindi",01687849912
+82,BHU Lahore 82,Lahore,Model Town,456,"174 Model Town, Lahore",08523986800
+83,BHU Karachi 83,Karachi,Gulshan-e-Iqbal,461,"243 Gulshan-e-Iqbal, Karachi",08729825952
+84,BHU Faisalabad 84,Faisalabad,D Ground,353,"173 D Ground, Faisalabad",08887947055
+85,Clinic Lahore 85,Lahore,Model Town,207,"14 Model Town, Lahore",09749930972
+86,Medical Centre Rawalpindi 86,Rawalpindi,Sadar,125,"125 Sadar, Rawalpindi",00913075626
+87,Clinic Peshawar 87,Peshawar,Saddar,446,"242 Saddar, Peshawar",00283857865
+88,Clinic Islamabad 88,Islamabad,Blue Area,225,"280 Blue Area, Islamabad",05497334843
+89,District Hospital Quetta 89,Quetta,Samungli Road,403,"251 Samungli Road, Quetta",05758441986
+90,District Hospital Faisalabad 90,Faisalabad,Clock Tower,198,"22 Clock Tower, Faisalabad",04157473384
+91,District Hospital Rawalpindi 91,Rawalpindi,Satellite Town,105,"123 Satellite Town, Rawalpindi",03083301657
+92,General Hospital Lahore 92,Lahore,Gulberg,331,"81 Gulberg, Lahore",06773454019
+93,General Hospital Peshawar 93,Peshawar,Zaryab Colony,139,"214 Zaryab Colony, Peshawar",02067240049
+94,BHU Sialkot 94,Sialkot,Ugoki Road,195,"233 Ugoki Road, Sialkot",08872874315
+95,BHU Islamabad 95,Islamabad,Blue Area,417,"96 Blue Area, Islamabad",00549329668
+96,Medical Centre Multan 96,Multan,Nishtar Road,392,"49 Nishtar Road, Multan",02275304637
+97,BHU Quetta 97,Quetta,Samungli Road,348,"294 Samungli Road, Quetta",00453017426
+98,General Hospital Rawalpindi 98,Rawalpindi,Satellite Town,377,"152 Satellite Town, Rawalpindi",05933272795
+99,Medical Centre Faisalabad 99,Faisalabad,D Ground,437,"276 D Ground, Faisalabad",03391878519
+100,Clinic Lahore 100,Lahore,Ferozpur Road,308,"104 Ferozpur Road, Lahore",09822587139
+101,Clinic Hyderabad 101,Hyderabad,Latifabad,278,"29 Latifabad, Hyderabad",07286790874
+102,BHU Karachi 102,Karachi,Clifton,468,"2 Clifton, Karachi",03910651801
+103,BHU Hyderabad 103,Hyderabad,Latifabad,259,"93 Latifabad, Hyderabad",02656766182
+104,District Hospital Multan 104,Multan,Nishtar Road,325,"202 Nishtar Road, Multan",08230047868
+105,District Hospital Faisalabad 105,Faisalabad,Canal Road,285,"178 Canal Road, Faisalabad",02431069033
+106,Clinic Lahore 106,Lahore,Ferozpur Road,67,"229 Ferozpur Road, Lahore",09030673830
+107,BHU Islamabad 107,Islamabad,F-10,169,"295 F-10, Islamabad",05995342836
+108,General Hospital Quetta 108,Quetta,Samungli Road,335,"90 Samungli Road, Quetta",06870568566
+109,Medical Centre Islamabad 109,Islamabad,I-8,144,"276 I-8, Islamabad",07334270866
+110,District Hospital Rawalpindi 110,Rawalpindi,Sadar,248,"125 Sadar, Rawalpindi",04351751830
+111,Clinic Quetta 111,Quetta,Cantt,358,"21 Cantt, Quetta",01398373540
+112,General Hospital Peshawar 112,Peshawar,University Road,432,"246 University Road, Peshawar",03936385467
+113,BHU Rawalpindi 113,Rawalpindi,Satellite Town,183,"185 Satellite Town, Rawalpindi",08771753556
+114,District Hospital Karachi 114,Karachi,F.B. Area,429,"75 F.B. Area, Karachi",00489964235
+115,Clinic Peshawar 115,Peshawar,Saddar,476,"126 Saddar, Peshawar",07854777252
+116,Medical Centre Islamabad 116,Islamabad,F-10,144,"278 F-10, Islamabad",00801006231
+117,District Hospital Islamabad 117,Islamabad,F-8,308,"234 F-8, Islamabad",05099770088
+118,General Hospital Faisalabad 118,Faisalabad,Satiana Road,321,"141 Satiana Road, Faisalabad",08408621182
+119,Clinic Peshawar 119,Peshawar,University Road,319,"130 University Road, Peshawar",05461567933
+120,General Hospital Quetta 120,Quetta,Jinnah Road,97,"208 Jinnah Road, Quetta",06687002176
+121,General Hospital Multan 121,Multan,Kalma Chowk,320,"22 Kalma Chowk, Multan",03397401489
+122,BHU Karachi 122,Karachi,Gulshan-e-Iqbal,58,"107 Gulshan-e-Iqbal, Karachi",09261429396
+123,Medical Centre Rawalpindi 123,Rawalpindi,Satellite Town,436,"72 Satellite Town, Rawalpindi",01850163159
+124,Medical Centre Sialkot 124,Sialkot,Hajipura,446,"168 Hajipura, Sialkot",00477358662
+125,General Hospital Sialkot 125,Sialkot,Model Town,445,"152 Model Town, Sialkot",03114262655
+126,General Hospital Lahore 126,Lahore,Ferozpur Road,207,"228 Ferozpur Road, Lahore",05412126788
+127,General Hospital Rawalpindi 127,Rawalpindi,Sadikabad,63,"46 Sadikabad, Rawalpindi",05819956046
+128,Clinic Faisalabad 128,Faisalabad,Satiana Road,174,"293 Satiana Road, Faisalabad",08262244472
+129,Medical Centre Lahore 129,Lahore,Gulberg,191,"216 Gulberg, Lahore",04715437993
+130,District Hospital Hyderabad 130,Hyderabad,Latifabad,205,"4 Latifabad, Hyderabad",06596575692
+131,Clinic Quetta 131,Quetta,Samungli Road,405,"103 Samungli Road, Quetta",07526547935
+132,Medical Centre Faisalabad 132,Faisalabad,Clock Tower,236,"59 Clock Tower, Faisalabad",09398280737
+133,Medical Centre Quetta 133,Quetta,Jinnah Road,394,"256 Jinnah Road, Quetta",02434266179
+134,Medical Centre Hyderabad 134,Hyderabad,Unit 7,323,"260 Unit 7, Hyderabad",06805891135
+135,General Hospital Islamabad 135,Islamabad,F-10,338,"205 F-10, Islamabad",05610143888
+136,District Hospital Sialkot 136,Sialkot,Hajipura,278,"192 Hajipura, Sialkot",06798250714
+137,General Hospital Faisalabad 137,Faisalabad,Satiana Road,475,"73 Satiana Road, Faisalabad",05457387571
+138,BHU Hyderabad 138,Hyderabad,Hali Road,84,"154 Hali Road, Hyderabad",00105123828
+139,Clinic Islamabad 139,Islamabad,I-8,268,"237 I-8, Islamabad",03622660937
+140,Medical Centre Sialkot 140,Sialkot,Model Town,52,"110 Model Town, Sialkot",03419182553
+141,BHU Hyderabad 141,Hyderabad,Latifabad,393,"251 Latifabad, Hyderabad",08596969155
+142,District Hospital Hyderabad 142,Hyderabad,Unit 7,466,"153 Unit 7, Hyderabad",09912513412
+143,Clinic Multan 143,Multan,Shujabad Road,248,"215 Shujabad Road, Multan",09296627828
+144,BHU Islamabad 144,Islamabad,Blue Area,121,"96 Blue Area, Islamabad",05790507236
+145,Medical Centre Rawalpindi 145,Rawalpindi,Sadar,259,"252 Sadar, Rawalpindi",06772190340
+146,Clinic Quetta 146,Quetta,Sariab Road,197,"87 Sariab Road, Quetta",07978819148
+147,General Hospital Multan 147,Multan,Kalma Chowk,439,"226 Kalma Chowk, Multan",08361340745
+148,General Hospital Lahore 148,Lahore,Model Town,447,"122 Model Town, Lahore",03959629233
+149,BHU Karachi 149,Karachi,F.B. Area,322,"144 F.B. Area, Karachi",09825449481
+150,General Hospital Islamabad 150,Islamabad,Blue Area,191,"65 Blue Area, Islamabad",02325367294
+151,Medical Centre Faisalabad 151,Faisalabad,Peoples Colony,88,"48 Peoples Colony, Faisalabad",06845775901
+152,General Hospital Hyderabad 152,Hyderabad,Tando Wali Muhammad,457,"274 Tando Wali Muhammad, Hyderabad",06363745458
+153,Clinic Sialkot 153,Sialkot,Paris Road,486,"249 Paris Road, Sialkot",05001701277
+154,District Hospital Karachi 154,Karachi,Clifton,402,"68 Clifton, Karachi",04241541520
+155,District Hospital Faisalabad 155,Faisalabad,Clock Tower,269,"47 Clock Tower, Faisalabad",01037129387
+156,BHU Karachi 156,Karachi,Saddar,468,"62 Saddar, Karachi",06271361115
+157,District Hospital Multan 157,Multan,Boson Road,245,"69 Boson Road, Multan",02189092753
+158,Clinic Islamabad 158,Islamabad,Blue Area,401,"227 Blue Area, Islamabad",03112196565
+159,BHU Islamabad 159,Islamabad,G-9,380,"44 G-9, Islamabad",03899940438
+160,District Hospital Sialkot 160,Sialkot,Hajipura,432,"201 Hajipura, Sialkot",04037613791
+161,BHU Rawalpindi 161,Rawalpindi,Murree Road,212,"68 Murree Road, Rawalpindi",06965827109
+162,BHU Lahore 162,Lahore,Ferozpur Road,160,"21 Ferozpur Road, Lahore",00684866618
+163,District Hospital Rawalpindi 163,Rawalpindi,Sadar,192,"43 Sadar, Rawalpindi",04183285691
+164,District Hospital Quetta 164,Quetta,Cantt,79,"126 Cantt, Quetta",01617990421
+165,General Hospital Karachi 165,Karachi,Gulshan-e-Iqbal,133,"255 Gulshan-e-Iqbal, Karachi",05884252410
+166,BHU Multan 166,Multan,Cantt,318,"33 Cantt, Multan",04917785079
+167,District Hospital Islamabad 167,Islamabad,I-8,180,"53 I-8, Islamabad",09138000307
+168,District Hospital Multan 168,Multan,Cantt,141,"19 Cantt, Multan",08635365419
+169,Clinic Multan 169,Multan,Nishtar Road,394,"27 Nishtar Road, Multan",02380617445
+170,Medical Centre Lahore 170,Lahore,DHA,54,"189 DHA, Lahore",03494937597
+171,District Hospital Peshawar 171,Peshawar,Zaryab Colony,127,"4 Zaryab Colony, Peshawar",06038505064
+172,Clinic Lahore 172,Lahore,Gulberg,171,"215 Gulberg, Lahore",07024103865
+173,Clinic Hyderabad 173,Hyderabad,Latifabad,98,"259 Latifabad, Hyderabad",02619906234
+174,Medical Centre Quetta 174,Quetta,Samungli Road,408,"168 Samungli Road, Quetta",05743132912
+175,Medical Centre Lahore 175,Lahore,Gulberg,288,"161 Gulberg, Lahore",06185374741
+176,BHU Lahore 176,Lahore,Gulberg,473,"21 Gulberg, Lahore",03521356804
+177,General Hospital Quetta 177,Quetta,Sariab Road,257,"232 Sariab Road, Quetta",08831712100
+178,District Hospital Peshawar 178,Peshawar,University Road,471,"206 University Road, Peshawar",05199410137
+179,BHU Islamabad 179,Islamabad,F-8,112,"22 F-8, Islamabad",07029667066
+180,District Hospital Islamabad 180,Islamabad,I-8,145,"141 I-8, Islamabad",04720999347
+181,Medical Centre Faisalabad 181,Faisalabad,D Ground,81,"45 D Ground, Faisalabad",04626383806
+182,Clinic Multan 182,Multan,Cantt,450,"249 Cantt, Multan",05985642059
+183,BHU Peshawar 183,Peshawar,Khyber Road,79,"242 Khyber Road, Peshawar",08593213348
+184,Clinic Karachi 184,Karachi,Gulshan-e-Iqbal,483,"199 Gulshan-e-Iqbal, Karachi",05223955905
+185,District Hospital Sialkot 185,Sialkot,Hajipura,338,"97 Hajipura, Sialkot",07842701039
+186,Clinic Peshawar 186,Peshawar,Khyber Road,294,"1 Khyber Road, Peshawar",05932525002
+187,General Hospital Sialkot 187,Sialkot,Paris Road,483,"270 Paris Road, Sialkot",05156915452
+188,Medical Centre Islamabad 188,Islamabad,Blue Area,382,"163 Blue Area, Islamabad",02895392644
+189,General Hospital Islamabad 189,Islamabad,G-9,409,"294 G-9, Islamabad",06902959391
+190,BHU Hyderabad 190,Hyderabad,Qasimabad,431,"40 Qasimabad, Hyderabad",03552157043
+191,BHU Peshawar 191,Peshawar,Khyber Road,181,"56 Khyber Road, Peshawar",00067626765
+192,General Hospital Rawalpindi 192,Rawalpindi,Sadikabad,474,"246 Sadikabad, Rawalpindi",09327104054
+193,BHU Lahore 193,Lahore,Ferozpur Road,137,"193 Ferozpur Road, Lahore",02181599706
+194,Medical Centre Islamabad 194,Islamabad,F-10,130,"28 F-10, Islamabad",01533688444
+195,General Hospital Peshawar 195,Peshawar,Khyber Road,251,"293 Khyber Road, Peshawar",08720506149
+196,General Hospital Hyderabad 196,Hyderabad,Qasimabad,63,"106 Qasimabad, Hyderabad",02417146774
+197,Medical Centre Lahore 197,Lahore,DHA,144,"190 DHA, Lahore",06527047743
+198,General Hospital Quetta 198,Quetta,Hazara Town,127,"50 Hazara Town, Quetta",01586938068
+199,Medical Centre Faisalabad 199,Faisalabad,D Ground,343,"121 D Ground, Faisalabad",07416089899
+200,Medical Centre Islamabad 200,Islamabad,F-8,138,"86 F-8, Islamabad",03320616329
+201,General Hospital Quetta 201,Quetta,Samungli Road,94,"199 Samungli Road, Quetta",08685487099
+202,General Hospital Rawalpindi 202,Rawalpindi,Sadikabad,262,"77 Sadikabad, Rawalpindi",02999119148
+203,BHU Multan 203,Multan,Cantt,246,"249 Cantt, Multan",09970246299
+204,Medical Centre Faisalabad 204,Faisalabad,Satiana Road,500,"170 Satiana Road, Faisalabad",03074505444
+205,District Hospital Hyderabad 205,Hyderabad,Latifabad,118,"154 Latifabad, Hyderabad",07546913736
+206,BHU Hyderabad 206,Hyderabad,Unit 7,470,"29 Unit 7, Hyderabad",08214862890
+207,District Hospital Islamabad 207,Islamabad,G-9,478,"30 G-9, Islamabad",03070534578
+208,General Hospital Faisalabad 208,Faisalabad,Satiana Road,173,"191 Satiana Road, Faisalabad",07972798552
+209,BHU Quetta 209,Quetta,Jinnah Road,64,"198 Jinnah Road, Quetta",00293333468
+210,Medical Centre Karachi 210,Karachi,Saddar,117,"89 Saddar, Karachi",09034944665
+211,District Hospital Hyderabad 211,Hyderabad,Tando Wali Muhammad,288,"155 Tando Wali Muhammad, Hyderabad",08969108589
+212,BHU Sialkot 212,Sialkot,Cantonment,400,"56 Cantonment, Sialkot",07154544432
+213,General Hospital Rawalpindi 213,Rawalpindi,Peshawar Road,462,"207 Peshawar Road, Rawalpindi",05207446660
+214,District Hospital Sialkot 214,Sialkot,Hajipura,225,"114 Hajipura, Sialkot",08758428241
+215,BHU Hyderabad 215,Hyderabad,Qasimabad,421,"287 Qasimabad, Hyderabad",02513534655
+216,BHU Quetta 216,Quetta,Hazara Town,287,"61 Hazara Town, Quetta",07099917381
+217,BHU Faisalabad 217,Faisalabad,D Ground,261,"28 D Ground, Faisalabad",02235697252
+218,BHU Lahore 218,Lahore,Model Town,373,"91 Model Town, Lahore",05007432927
+219,Clinic Lahore 219,Lahore,Gulberg,272,"220 Gulberg, Lahore",06676008350
+220,District Hospital Multan 220,Multan,Kalma Chowk,59,"3 Kalma Chowk, Multan",03354216894
+221,General Hospital Islamabad 221,Islamabad,F-8,202,"149 F-8, Islamabad",07898562575
+222,Medical Centre Peshawar 222,Peshawar,University Road,59,"117 University Road, Peshawar",03230982150
+223,Clinic Faisalabad 223,Faisalabad,Clock Tower,369,"25 Clock Tower, Faisalabad",09010016761
+224,Medical Centre Rawalpindi 224,Rawalpindi,Satellite Town,409,"79 Satellite Town, Rawalpindi",03046184992
+225,Clinic Faisalabad 225,Faisalabad,Satiana Road,418,"61 Satiana Road, Faisalabad",04117393483
+226,BHU Multan 226,Multan,Cantt,132,"21 Cantt, Multan",08737530011
+227,District Hospital Sialkot 227,Sialkot,Model Town,96,"262 Model Town, Sialkot",01143744701
+228,BHU Islamabad 228,Islamabad,F-8,234,"161 F-8, Islamabad",06110022557
+229,General Hospital Sialkot 229,Sialkot,Cantonment,240,"176 Cantonment, Sialkot",02166746762
+230,General Hospital Lahore 230,Lahore,Gulberg,482,"82 Gulberg, Lahore",01697972965
+231,District Hospital Sialkot 231,Sialkot,Ugoki Road,297,"250 Ugoki Road, Sialkot",01670145089
+232,BHU Sialkot 232,Sialkot,Paris Road,315,"268 Paris Road, Sialkot",09163756289
+233,District Hospital Karachi 233,Karachi,Saddar,308,"241 Saddar, Karachi",07217535408
+234,Medical Centre Peshawar 234,Peshawar,Zaryab Colony,256,"121 Zaryab Colony, Peshawar",01779717751
+235,General Hospital Hyderabad 235,Hyderabad,Latifabad,256,"212 Latifabad, Hyderabad",00880199488
+236,BHU Peshawar 236,Peshawar,Saddar,236,"28 Saddar, Peshawar",03758997571
+237,General Hospital Lahore 237,Lahore,Gulberg,224,"182 Gulberg, Lahore",04885102726
+238,Clinic Lahore 238,Lahore,Johar Town,150,"97 Johar Town, Lahore",01637351609
+239,Medical Centre Lahore 239,Lahore,Model Town,387,"259 Model Town, Lahore",02708086978
+240,District Hospital Islamabad 240,Islamabad,F-10,424,"66 F-10, Islamabad",01699586693
+241,BHU Quetta 241,Quetta,Cantt,200,"232 Cantt, Quetta",02269848583
+242,Clinic Peshawar 242,Peshawar,University Road,415,"149 University Road, Peshawar",05228851587
+243,Medical Centre Sialkot 243,Sialkot,Hajipura,395,"274 Hajipura, Sialkot",04608106200
+244,District Hospital Peshawar 244,Peshawar,Hayatabad,196,"129 Hayatabad, Peshawar",02043805719
+245,Clinic Rawalpindi 245,Rawalpindi,Peshawar Road,249,"122 Peshawar Road, Rawalpindi",08406665800
+246,Clinic Quetta 246,Quetta,Sariab Road,494,"227 Sariab Road, Quetta",03598933472
+247,District Hospital Lahore 247,Lahore,Gulberg,426,"264 Gulberg, Lahore",01606484229
+248,BHU Quetta 248,Quetta,Jinnah Road,288,"80 Jinnah Road, Quetta",00259094798
+249,BHU Multan 249,Multan,Nishtar Road,319,"113 Nishtar Road, Multan",02818268861
+250,District Hospital Multan 250,Multan,Shujabad Road,389,"170 Shujabad Road, Multan",05543987801
+251,District Hospital Multan 251,Multan,Cantt,378,"125 Cantt, Multan",00561648408
+252,Clinic Multan 252,Multan,Kalma Chowk,278,"250 Kalma Chowk, Multan",00435811288
+253,District Hospital Karachi 253,Karachi,Saddar,393,"110 Saddar, Karachi",06138612075
+254,General Hospital Karachi 254,Karachi,Saddar,77,"92 Saddar, Karachi",04819346676
+255,General Hospital Faisalabad 255,Faisalabad,Clock Tower,249,"61 Clock Tower, Faisalabad",08091901581
+256,Clinic Quetta 256,Quetta,Samungli Road,94,"145 Samungli Road, Quetta",07660728326
+257,District Hospital Rawalpindi 257,Rawalpindi,Satellite Town,202,"192 Satellite Town, Rawalpindi",00882100996
+258,General Hospital Rawalpindi 258,Rawalpindi,Sadar,206,"108 Sadar, Rawalpindi",05368222394
+259,District Hospital Peshawar 259,Peshawar,Khyber Road,393,"291 Khyber Road, Peshawar",00878141413
+260,BHU Sialkot 260,Sialkot,Model Town,232,"66 Model Town, Sialkot",03149135775
+261,Clinic Sialkot 261,Sialkot,Cantonment,128,"290 Cantonment, Sialkot",09556205336
+262,District Hospital Quetta 262,Quetta,Samungli Road,397,"170 Samungli Road, Quetta",07775478129
+263,District Hospital Lahore 263,Lahore,Johar Town,325,"101 Johar Town, Lahore",04110809969
+264,Clinic Peshawar 264,Peshawar,Khyber Road,183,"279 Khyber Road, Peshawar",08725639427
+265,General Hospital Rawalpindi 265,Rawalpindi,Sadar,253,"187 Sadar, Rawalpindi",08039282722
+266,District Hospital Sialkot 266,Sialkot,Hajipura,426,"248 Hajipura, Sialkot",05037314530
+267,BHU Peshawar 267,Peshawar,Zaryab Colony,248,"241 Zaryab Colony, Peshawar",07005184498
+268,Medical Centre Sialkot 268,Sialkot,Paris Road,384,"194 Paris Road, Sialkot",05918463865
+269,Medical Centre Multan 269,Multan,Cantt,359,"4 Cantt, Multan",08272318432
+270,BHU Islamabad 270,Islamabad,G-9,358,"61 G-9, Islamabad",03651777392
+271,District Hospital Faisalabad 271,Faisalabad,Satiana Road,72,"66 Satiana Road, Faisalabad",09922809202
+272,Clinic Quetta 272,Quetta,Sariab Road,257,"289 Sariab Road, Quetta",00413797723
+273,District Hospital Faisalabad 273,Faisalabad,D Ground,456,"299 D Ground, Faisalabad",02984257991
+274,Medical Centre Peshawar 274,Peshawar,Saddar,117,"56 Saddar, Peshawar",00388629127
+275,General Hospital Sialkot 275,Sialkot,Hajipura,499,"273 Hajipura, Sialkot",08117298068
+276,General Hospital Faisalabad 276,Faisalabad,Clock Tower,407,"272 Clock Tower, Faisalabad",06376599162
+277,District Hospital Quetta 277,Quetta,Cantt,489,"43 Cantt, Quetta",04986430098
+278,General Hospital Lahore 278,Lahore,DHA,242,"106 DHA, Lahore",05651269448
+279,BHU Faisalabad 279,Faisalabad,D Ground,363,"142 D Ground, Faisalabad",06368872588
+280,BHU Hyderabad 280,Hyderabad,Tando Wali Muhammad,345,"177 Tando Wali Muhammad, Hyderabad",06213721386
+281,Clinic Multan 281,Multan,Kalma Chowk,406,"27 Kalma Chowk, Multan",02601279611
+282,BHU Quetta 282,Quetta,Sariab Road,90,"20 Sariab Road, Quetta",06698490277
+283,Clinic Karachi 283,Karachi,Gulshan-e-Iqbal,196,"100 Gulshan-e-Iqbal, Karachi",00988392053
+284,General Hospital Karachi 284,Karachi,Gulshan-e-Iqbal,191,"205 Gulshan-e-Iqbal, Karachi",05669380118
+285,Clinic Quetta 285,Quetta,Hazara Town,228,"178 Hazara Town, Quetta",04393769042
+286,General Hospital Faisalabad 286,Faisalabad,D Ground,336,"38 D Ground, Faisalabad",08451848947
+287,Medical Centre Faisalabad 287,Faisalabad,D Ground,444,"125 D Ground, Faisalabad",05779071416
+288,BHU Peshawar 288,Peshawar,University Road,261,"181 University Road, Peshawar",08804341651
+289,Medical Centre Rawalpindi 289,Rawalpindi,Peshawar Road,210,"182 Peshawar Road, Rawalpindi",03942373334
+290,District Hospital Peshawar 290,Peshawar,University Road,477,"128 University Road, Peshawar",09521117908
+291,BHU Karachi 291,Karachi,Clifton,367,"162 Clifton, Karachi",07947284639
+292,Clinic Islamabad 292,Islamabad,F-8,459,"217 F-8, Islamabad",07808562718
+293,General Hospital Hyderabad 293,Hyderabad,Tando Wali Muhammad,56,"108 Tando Wali Muhammad, Hyderabad",06915594284
+294,Medical Centre Peshawar 294,Peshawar,Hayatabad,363,"176 Hayatabad, Peshawar",05276365564
+295,Clinic Hyderabad 295,Hyderabad,Qasimabad,117,"295 Qasimabad, Hyderabad",03143866322
+296,District Hospital Hyderabad 296,Hyderabad,Latifabad,265,"256 Latifabad, Hyderabad",02885744890
+297,District Hospital Faisalabad 297,Faisalabad,Satiana Road,80,"111 Satiana Road, Faisalabad",04717545588
+298,General Hospital Quetta 298,Quetta,Samungli Road,260,"63 Samungli Road, Quetta",05939982455
+299,Medical Centre Rawalpindi 299,Rawalpindi,Sadikabad,90,"196 Sadikabad, Rawalpindi",09472256996
+300,District Hospital Lahore 300,Lahore,Ferozpur Road,225,"117 Ferozpur Road, Lahore",05544964759
+301,Medical Centre Rawalpindi 301,Rawalpindi,Sadikabad,135,"95 Sadikabad, Rawalpindi",00234132611
+302,Clinic Lahore 302,Lahore,Model Town,77,"14 Model Town, Lahore",06811492164
+303,BHU Peshawar 303,Peshawar,University Road,276,"65 University Road, Peshawar",02820055778
+304,Medical Centre Quetta 304,Quetta,Hazara Town,119,"277 Hazara Town, Quetta",02997968845
+305,District Hospital Hyderabad 305,Hyderabad,Unit 7,462,"46 Unit 7, Hyderabad",07456424008
+306,BHU Islamabad 306,Islamabad,I-8,290,"274 I-8, Islamabad",00774064930
+307,District Hospital Rawalpindi 307,Rawalpindi,Satellite Town,260,"288 Satellite Town, Rawalpindi",06632663416
+308,Clinic Peshawar 308,Peshawar,Zaryab Colony,463,"140 Zaryab Colony, Peshawar",04846312241
+309,Medical Centre Hyderabad 309,Hyderabad,Unit 7,189,"252 Unit 7, Hyderabad",03502080214
+310,Medical Centre Quetta 310,Quetta,Sariab Road,422,"5 Sariab Road, Quetta",03120735647
+311,General Hospital Multan 311,Multan,Cantt,219,"42 Cantt, Multan",02046187234
+312,General Hospital Faisalabad 312,Faisalabad,Satiana Road,443,"128 Satiana Road, Faisalabad",06730371837
+313,BHU Faisalabad 313,Faisalabad,Clock Tower,131,"22 Clock Tower, Faisalabad",08814743503
+314,Medical Centre Lahore 314,Lahore,Gulberg,216,"8 Gulberg, Lahore",02491630097
+315,BHU Sialkot 315,Sialkot,Paris Road,444,"46 Paris Road, Sialkot",03271950052
+316,District Hospital Rawalpindi 316,Rawalpindi,Murree Road,299,"120 Murree Road, Rawalpindi",05857306524
+317,Medical Centre Karachi 317,Karachi,Clifton,336,"151 Clifton, Karachi",08739285574
+318,District Hospital Sialkot 318,Sialkot,Hajipura,85,"272 Hajipura, Sialkot",02744857086
+319,Clinic Islamabad 319,Islamabad,F-8,488,"187 F-8, Islamabad",09351863878
+320,BHU Islamabad 320,Islamabad,F-10,215,"210 F-10, Islamabad",05118102203
+321,District Hospital Lahore 321,Lahore,Model Town,100,"17 Model Town, Lahore",09678994053
+322,General Hospital Sialkot 322,Sialkot,Ugoki Road,156,"252 Ugoki Road, Sialkot",01705865094
+323,General Hospital Rawalpindi 323,Rawalpindi,Murree Road,477,"156 Murree Road, Rawalpindi",01381138633
+324,Clinic Rawalpindi 324,Rawalpindi,Peshawar Road,370,"92 Peshawar Road, Rawalpindi",08861957612
+325,Medical Centre Islamabad 325,Islamabad,F-10,308,"173 F-10, Islamabad",02897558556
+326,Clinic Faisalabad 326,Faisalabad,Clock Tower,173,"289 Clock Tower, Faisalabad",08368457760
+327,Clinic Karachi 327,Karachi,North Nazimabad,58,"266 North Nazimabad, Karachi",02404335048
+328,Clinic Rawalpindi 328,Rawalpindi,Sadar,342,"80 Sadar, Rawalpindi",01075224593
+329,BHU Peshawar 329,Peshawar,Hayatabad,97,"293 Hayatabad, Peshawar",06931572791
+330,General Hospital Sialkot 330,Sialkot,Cantonment,424,"296 Cantonment, Sialkot",06105566139
+331,General Hospital Karachi 331,Karachi,Clifton,206,"269 Clifton, Karachi",00589258320
+332,Clinic Faisalabad 332,Faisalabad,Peoples Colony,344,"259 Peoples Colony, Faisalabad",01364622517
+333,Clinic Sialkot 333,Sialkot,Ugoki Road,254,"135 Ugoki Road, Sialkot",01686227837
+334,District Hospital Faisalabad 334,Faisalabad,D Ground,337,"269 D Ground, Faisalabad",03314659116
+335,BHU Faisalabad 335,Faisalabad,Clock Tower,147,"165 Clock Tower, Faisalabad",05904259792
+336,District Hospital Hyderabad 336,Hyderabad,Latifabad,152,"192 Latifabad, Hyderabad",02110392405
+337,Medical Centre Lahore 337,Lahore,Johar Town,291,"12 Johar Town, Lahore",05383388487
+338,General Hospital Sialkot 338,Sialkot,Paris Road,242,"299 Paris Road, Sialkot",08042043940
+339,General Hospital Hyderabad 339,Hyderabad,Latifabad,248,"139 Latifabad, Hyderabad",05104636815
+340,Clinic Hyderabad 340,Hyderabad,Unit 7,95,"96 Unit 7, Hyderabad",03878003845
+341,District Hospital Hyderabad 341,Hyderabad,Hali Road,59,"178 Hali Road, Hyderabad",05543840460
+342,District Hospital Rawalpindi 342,Rawalpindi,Satellite Town,127,"175 Satellite Town, Rawalpindi",06216893639
+343,BHU Islamabad 343,Islamabad,Blue Area,359,"169 Blue Area, Islamabad",07823298324
+344,Medical Centre Rawalpindi 344,Rawalpindi,Peshawar Road,444,"75 Peshawar Road, Rawalpindi",09251881252
+345,Medical Centre Karachi 345,Karachi,North Nazimabad,260,"156 North Nazimabad, Karachi",07423122099
+346,Clinic Quetta 346,Quetta,Hazara Town,363,"119 Hazara Town, Quetta",09330517289
+347,District Hospital Hyderabad 347,Hyderabad,Tando Wali Muhammad,486,"199 Tando Wali Muhammad, Hyderabad",07722330604
+348,District Hospital Faisalabad 348,Faisalabad,Canal Road,437,"105 Canal Road, Faisalabad",01279757366
+349,Medical Centre Karachi 349,Karachi,F.B. Area,418,"161 F.B. Area, Karachi",06999880817
+350,District Hospital Hyderabad 350,Hyderabad,Latifabad,315,"276 Latifabad, Hyderabad",06086803476
+351,Medical Centre Quetta 351,Quetta,Samungli Road,135,"217 Samungli Road, Quetta",04908277181
+352,Clinic Islamabad 352,Islamabad,F-10,119,"202 F-10, Islamabad",06570279371
+353,District Hospital Quetta 353,Quetta,Samungli Road,417,"64 Samungli Road, Quetta",01175186892
+354,Medical Centre Faisalabad 354,Faisalabad,D Ground,72,"88 D Ground, Faisalabad",05922220644
+355,District Hospital Hyderabad 355,Hyderabad,Tando Wali Muhammad,110,"68 Tando Wali Muhammad, Hyderabad",03094077780
+356,District Hospital Sialkot 356,Sialkot,Model Town,161,"244 Model Town, Sialkot",07671990384
+357,District Hospital Sialkot 357,Sialkot,Hajipura,75,"95 Hajipura, Sialkot",02050209945
+358,General Hospital Lahore 358,Lahore,Ferozpur Road,263,"92 Ferozpur Road, Lahore",02499982795
+359,BHU Karachi 359,Karachi,Saddar,215,"189 Saddar, Karachi",06168147214
+360,Medical Centre Multan 360,Multan,Kalma Chowk,318,"108 Kalma Chowk, Multan",03901981794
+361,BHU Faisalabad 361,Faisalabad,D Ground,182,"270 D Ground, Faisalabad",09952997877
+362,District Hospital Islamabad 362,Islamabad,F-10,412,"149 F-10, Islamabad",03010713966
+363,BHU Karachi 363,Karachi,North Nazimabad,336,"109 North Nazimabad, Karachi",00344144885
+364,BHU Karachi 364,Karachi,Saddar,224,"203 Saddar, Karachi",09902355770
+365,District Hospital Islamabad 365,Islamabad,Blue Area,371,"236 Blue Area, Islamabad",08576084958
+366,District Hospital Rawalpindi 366,Rawalpindi,Murree Road,345,"170 Murree Road, Rawalpindi",05124056829
+367,District Hospital Sialkot 367,Sialkot,Model Town,354,"60 Model Town, Sialkot",04504617357
+368,Clinic Quetta 368,Quetta,Sariab Road,204,"90 Sariab Road, Quetta",01503178078
+369,BHU Islamabad 369,Islamabad,G-9,297,"269 G-9, Islamabad",04521823076
+370,General Hospital Rawalpindi 370,Rawalpindi,Murree Road,209,"23 Murree Road, Rawalpindi",09157018409
+371,BHU Quetta 371,Quetta,Sariab Road,152,"99 Sariab Road, Quetta",04485714224
+372,Clinic Lahore 372,Lahore,Ferozpur Road,336,"264 Ferozpur Road, Lahore",01385854249
+373,General Hospital Peshawar 373,Peshawar,University Road,209,"174 University Road, Peshawar",08702070160
+374,Medical Centre Lahore 374,Lahore,Model Town,141,"229 Model Town, Lahore",09545381792
+375,General Hospital Lahore 375,Lahore,Model Town,283,"159 Model Town, Lahore",07733294562
+376,Medical Centre Multan 376,Multan,Boson Road,299,"16 Boson Road, Multan",01715772459
+377,Clinic Sialkot 377,Sialkot,Paris Road,102,"208 Paris Road, Sialkot",01581487696
+378,District Hospital Peshawar 378,Peshawar,Zaryab Colony,330,"82 Zaryab Colony, Peshawar",07615396695
+379,District Hospital Rawalpindi 379,Rawalpindi,Peshawar Road,389,"40 Peshawar Road, Rawalpindi",09719975817
+380,Medical Centre Islamabad 380,Islamabad,I-8,85,"56 I-8, Islamabad",09657013290
+381,Medical Centre Islamabad 381,Islamabad,G-9,322,"150 G-9, Islamabad",06997335494
+382,General Hospital Faisalabad 382,Faisalabad,Clock Tower,348,"5 Clock Tower, Faisalabad",09862405800
+383,General Hospital Rawalpindi 383,Rawalpindi,Satellite Town,490,"145 Satellite Town, Rawalpindi",00369656666
+384,District Hospital Rawalpindi 384,Rawalpindi,Peshawar Road,293,"72 Peshawar Road, Rawalpindi",03865624220
+385,District Hospital Lahore 385,Lahore,Ferozpur Road,419,"250 Ferozpur Road, Lahore",06212679692
+386,Medical Centre Hyderabad 386,Hyderabad,Unit 7,332,"231 Unit 7, Hyderabad",06532690973
+387,Medical Centre Rawalpindi 387,Rawalpindi,Satellite Town,329,"296 Satellite Town, Rawalpindi",05009751971
+388,BHU Islamabad 388,Islamabad,F-10,288,"265 F-10, Islamabad",01891371894
+389,BHU Sialkot 389,Sialkot,Ugoki Road,323,"6 Ugoki Road, Sialkot",07787956544
+390,Clinic Islamabad 390,Islamabad,F-8,433,"156 F-8, Islamabad",09407929049
+391,Medical Centre Karachi 391,Karachi,North Nazimabad,92,"65 North Nazimabad, Karachi",08144294440
+392,District Hospital Lahore 392,Lahore,DHA,352,"78 DHA, Lahore",07524372805
+393,Clinic Lahore 393,Lahore,Gulberg,470,"79 Gulberg, Lahore",07663723950
+394,General Hospital Quetta 394,Quetta,Jinnah Road,135,"238 Jinnah Road, Quetta",06747836674
+395,Medical Centre Islamabad 395,Islamabad,F-10,56,"148 F-10, Islamabad",07658018569
+396,BHU Quetta 396,Quetta,Samungli Road,186,"51 Samungli Road, Quetta",04967393852
+397,General Hospital Multan 397,Multan,Kalma Chowk,394,"5 Kalma Chowk, Multan",01061817534
+398,General Hospital Quetta 398,Quetta,Sariab Road,62,"48 Sariab Road, Quetta",00939111926
+399,General Hospital Sialkot 399,Sialkot,Paris Road,406,"95 Paris Road, Sialkot",04471746542
+400,General Hospital Lahore 400,Lahore,Johar Town,245,"199 Johar Town, Lahore",05044271739
+401,Medical Centre Faisalabad 401,Faisalabad,Canal Road,105,"74 Canal Road, Faisalabad",08639174101
+402,BHU Lahore 402,Lahore,DHA,447,"229 DHA, Lahore",00720064256
+403,Clinic Sialkot 403,Sialkot,Ugoki Road,412,"252 Ugoki Road, Sialkot",07661830671
+404,BHU Sialkot 404,Sialkot,Hajipura,220,"156 Hajipura, Sialkot",06015851743
+405,General Hospital Islamabad 405,Islamabad,F-10,246,"98 F-10, Islamabad",04615717320
+406,Clinic Peshawar 406,Peshawar,Khyber Road,172,"251 Khyber Road, Peshawar",06184787005
+407,General Hospital Karachi 407,Karachi,North Nazimabad,257,"61 North Nazimabad, Karachi",03878293102
+408,Medical Centre Hyderabad 408,Hyderabad,Latifabad,366,"24 Latifabad, Hyderabad",03202041792
+409,General Hospital Sialkot 409,Sialkot,Ugoki Road,108,"255 Ugoki Road, Sialkot",09931365651
+410,District Hospital Sialkot 410,Sialkot,Hajipura,214,"110 Hajipura, Sialkot",00925114262
+411,District Hospital Multan 411,Multan,Kalma Chowk,274,"125 Kalma Chowk, Multan",09021962071
+412,District Hospital Karachi 412,Karachi,Saddar,95,"146 Saddar, Karachi",06723248763
+413,General Hospital Islamabad 413,Islamabad,F-10,355,"93 F-10, Islamabad",07914560833
+414,General Hospital Lahore 414,Lahore,DHA,366,"186 DHA, Lahore",08837340312
+415,District Hospital Hyderabad 415,Hyderabad,Hali Road,131,"23 Hali Road, Hyderabad",00543645970
+416,Clinic Lahore 416,Lahore,Ferozpur Road,140,"81 Ferozpur Road, Lahore",00781137995
+417,BHU Faisalabad 417,Faisalabad,Canal Road,167,"57 Canal Road, Faisalabad",05313636317
+418,General Hospital Sialkot 418,Sialkot,Model Town,273,"75 Model Town, Sialkot",03972652735
+419,BHU Quetta 419,Quetta,Sariab Road,115,"17 Sariab Road, Quetta",09042177625
+420,Clinic Peshawar 420,Peshawar,Hayatabad,130,"88 Hayatabad, Peshawar",09831687397
+421,General Hospital Hyderabad 421,Hyderabad,Tando Wali Muhammad,423,"220 Tando Wali Muhammad, Hyderabad",03356939290
+422,General Hospital Faisalabad 422,Faisalabad,Satiana Road,290,"259 Satiana Road, Faisalabad",00686717731
+423,Medical Centre Rawalpindi 423,Rawalpindi,Murree Road,161,"68 Murree Road, Rawalpindi",05431074279
+424,Medical Centre Sialkot 424,Sialkot,Ugoki Road,287,"71 Ugoki Road, Sialkot",06257016580
+425,BHU Quetta 425,Quetta,Cantt,407,"278 Cantt, Quetta",09319508501
+426,Medical Centre Faisalabad 426,Faisalabad,Clock Tower,366,"21 Clock Tower, Faisalabad",05528183253
+427,Medical Centre Rawalpindi 427,Rawalpindi,Murree Road,427,"298 Murree Road, Rawalpindi",03355486401
+428,Medical Centre Multan 428,Multan,Boson Road,298,"257 Boson Road, Multan",08178847951
+429,General Hospital Peshawar 429,Peshawar,Saddar,91,"201 Saddar, Peshawar",02411241272
+430,General Hospital Peshawar 430,Peshawar,Zaryab Colony,200,"214 Zaryab Colony, Peshawar",08275670431
+431,Clinic Karachi 431,Karachi,Gulshan-e-Iqbal,380,"172 Gulshan-e-Iqbal, Karachi",06955798877
+432,District Hospital Quetta 432,Quetta,Hazara Town,454,"157 Hazara Town, Quetta",02437540254
+433,Clinic Hyderabad 433,Hyderabad,Qasimabad,132,"275 Qasimabad, Hyderabad",04222231059
+434,BHU Islamabad 434,Islamabad,Blue Area,239,"95 Blue Area, Islamabad",03805525782
+435,General Hospital Rawalpindi 435,Rawalpindi,Satellite Town,62,"208 Satellite Town, Rawalpindi",07275208854
+436,Clinic Hyderabad 436,Hyderabad,Tando Wali Muhammad,391,"76 Tando Wali Muhammad, Hyderabad",09751702814
+437,Clinic Karachi 437,Karachi,Clifton,480,"113 Clifton, Karachi",07515093983
+438,General Hospital Quetta 438,Quetta,Sariab Road,92,"276 Sariab Road, Quetta",07186375998
+439,Medical Centre Karachi 439,Karachi,North Nazimabad,125,"219 North Nazimabad, Karachi",05650455478
+440,Medical Centre Lahore 440,Lahore,Gulberg,429,"213 Gulberg, Lahore",07426629912
+441,Medical Centre Peshawar 441,Peshawar,Hayatabad,494,"269 Hayatabad, Peshawar",05196106462
+442,Clinic Rawalpindi 442,Rawalpindi,Sadikabad,436,"71 Sadikabad, Rawalpindi",03264870494
+443,Medical Centre Hyderabad 443,Hyderabad,Unit 7,164,"14 Unit 7, Hyderabad",00244714627
+444,General Hospital Peshawar 444,Peshawar,Khyber Road,441,"142 Khyber Road, Peshawar",07195979647
+445,Clinic Lahore 445,Lahore,Johar Town,425,"295 Johar Town, Lahore",00429025725
+446,BHU Islamabad 446,Islamabad,F-8,234,"215 F-8, Islamabad",05044818321
+447,Clinic Sialkot 447,Sialkot,Paris Road,215,"162 Paris Road, Sialkot",04451895202
+448,BHU Rawalpindi 448,Rawalpindi,Satellite Town,448,"249 Satellite Town, Rawalpindi",06521328338
+449,Clinic Sialkot 449,Sialkot,Hajipura,414,"283 Hajipura, Sialkot",01671120754
+450,Medical Centre Multan 450,Multan,Shujabad Road,355,"268 Shujabad Road, Multan",05240132234
+451,District Hospital Islamabad 451,Islamabad,G-9,90,"218 G-9, Islamabad",01107603108
+452,Medical Centre Sialkot 452,Sialkot,Ugoki Road,110,"130 Ugoki Road, Sialkot",00140119393
+453,General Hospital Islamabad 453,Islamabad,I-8,96,"75 I-8, Islamabad",04955289389
+454,Clinic Lahore 454,Lahore,Ferozpur Road,440,"8 Ferozpur Road, Lahore",08334280138
+455,Clinic Hyderabad 455,Hyderabad,Tando Wali Muhammad,144,"226 Tando Wali Muhammad, Hyderabad",01256638361
+456,Medical Centre Multan 456,Multan,Nishtar Road,106,"267 Nishtar Road, Multan",02754801571
+457,Medical Centre Faisalabad 457,Faisalabad,Clock Tower,357,"160 Clock Tower, Faisalabad",07386463175
+458,Medical Centre Islamabad 458,Islamabad,F-8,394,"54 F-8, Islamabad",06781126691
+459,BHU Islamabad 459,Islamabad,F-8,151,"174 F-8, Islamabad",03961367499
+460,BHU Quetta 460,Quetta,Cantt,293,"208 Cantt, Quetta",07842711477
+461,General Hospital Peshawar 461,Peshawar,University Road,100,"28 University Road, Peshawar",01702695249
+462,General Hospital Sialkot 462,Sialkot,Ugoki Road,388,"267 Ugoki Road, Sialkot",07734778485
+463,General Hospital Rawalpindi 463,Rawalpindi,Sadar,441,"17 Sadar, Rawalpindi",06167567700
+464,BHU Islamabad 464,Islamabad,F-10,411,"85 F-10, Islamabad",07624671978
+465,Medical Centre Rawalpindi 465,Rawalpindi,Sadar,293,"288 Sadar, Rawalpindi",02806479695
+466,General Hospital Quetta 466,Quetta,Samungli Road,64,"24 Samungli Road, Quetta",02559056165
+467,BHU Multan 467,Multan,Cantt,78,"126 Cantt, Multan",03349114152
+468,BHU Karachi 468,Karachi,F.B. Area,69,"236 F.B. Area, Karachi",06986407905
+469,Medical Centre Faisalabad 469,Faisalabad,D Ground,215,"294 D Ground, Faisalabad",01713578529
+470,Medical Centre Quetta 470,Quetta,Samungli Road,153,"255 Samungli Road, Quetta",01834404963
+471,Clinic Sialkot 471,Sialkot,Ugoki Road,98,"173 Ugoki Road, Sialkot",04198763514
+472,Medical Centre Rawalpindi 472,Rawalpindi,Satellite Town,389,"277 Satellite Town, Rawalpindi",05366498782
+473,District Hospital Karachi 473,Karachi,F.B. Area,345,"256 F.B. Area, Karachi",03748969083
+474,District Hospital Multan 474,Multan,Cantt,173,"78 Cantt, Multan",04665136442
+475,District Hospital Quetta 475,Quetta,Hazara Town,257,"123 Hazara Town, Quetta",01230347786
+476,District Hospital Faisalabad 476,Faisalabad,Satiana Road,131,"140 Satiana Road, Faisalabad",02044820700
+477,Clinic Lahore 477,Lahore,Johar Town,202,"33 Johar Town, Lahore",06516231981
+478,Clinic Rawalpindi 478,Rawalpindi,Sadar,178,"255 Sadar, Rawalpindi",01391559636
+479,General Hospital Peshawar 479,Peshawar,University Road,139,"110 University Road, Peshawar",04764907851
+480,Medical Centre Multan 480,Multan,Kalma Chowk,293,"127 Kalma Chowk, Multan",04257540900
+481,Clinic Peshawar 481,Peshawar,Hayatabad,246,"159 Hayatabad, Peshawar",05183760644
+482,BHU Lahore 482,Lahore,Gulberg,157,"83 Gulberg, Lahore",07560417765
+483,District Hospital Faisalabad 483,Faisalabad,Satiana Road,407,"134 Satiana Road, Faisalabad",08156985700
+484,District Hospital Islamabad 484,Islamabad,Blue Area,51,"206 Blue Area, Islamabad",03459112382
+485,BHU Sialkot 485,Sialkot,Model Town,281,"245 Model Town, Sialkot",02429543165
+486,Medical Centre Islamabad 486,Islamabad,Blue Area,477,"293 Blue Area, Islamabad",03008931734
+487,Medical Centre Islamabad 487,Islamabad,F-8,366,"220 F-8, Islamabad",09421529108
+488,Medical Centre Faisalabad 488,Faisalabad,Peoples Colony,110,"115 Peoples Colony, Faisalabad",03344762639
+489,District Hospital Peshawar 489,Peshawar,Hayatabad,264,"93 Hayatabad, Peshawar",06204439735
+490,General Hospital Sialkot 490,Sialkot,Model Town,55,"241 Model Town, Sialkot",02563669411
+491,General Hospital Rawalpindi 491,Rawalpindi,Murree Road,220,"121 Murree Road, Rawalpindi",07599004896
+492,BHU Quetta 492,Quetta,Cantt,117,"287 Cantt, Quetta",00924287572
+493,Clinic Lahore 493,Lahore,Johar Town,271,"73 Johar Town, Lahore",04150274564
+494,BHU Quetta 494,Quetta,Hazara Town,314,"161 Hazara Town, Quetta",06257287032
+495,District Hospital Karachi 495,Karachi,Gulshan-e-Iqbal,68,"241 Gulshan-e-Iqbal, Karachi",04276170758
+496,Medical Centre Hyderabad 496,Hyderabad,Hali Road,107,"76 Hali Road, Hyderabad",01513422849
+497,Clinic Sialkot 497,Sialkot,Paris Road,52,"270 Paris Road, Sialkot",09261371504
+498,BHU Lahore 498,Lahore,Model Town,352,"55 Model Town, Lahore",05201777490
+499,Clinic Multan 499,Multan,Nishtar Road,281,"167 Nishtar Road, Multan",09230450189
+500,Medical Centre Faisalabad 500,Faisalabad,Satiana Road,180,"92 Satiana Road, Faisalabad",03610326642

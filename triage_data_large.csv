@@ -1,0 +1,502 @@
+
+case_id,symptoms_en,symptoms_ur,classification,notes
+1,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+2,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+3,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+4,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+5,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+6,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+7,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+8,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+9,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+10,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+11,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+12,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+13,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+14,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+15,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+16,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+17,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+18,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+19,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+20,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+21,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+22,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+23,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+24,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+25,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+26,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+27,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+28,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+29,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+30,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+31,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+32,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+33,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+34,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+35,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+36,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+37,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+38,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+39,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+40,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+41,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+42,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+43,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+44,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+45,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+46,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+47,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+48,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+49,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+50,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+51,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+52,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+53,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+54,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+55,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+56,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+57,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+58,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+59,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+60,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+61,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+62,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+63,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+64,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+65,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+66,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+67,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+68,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+69,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+70,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+71,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+72,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+73,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+74,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+75,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+76,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+77,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+78,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+79,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+80,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+81,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+82,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+83,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+84,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+85,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+86,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+87,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+88,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+89,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+90,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+91,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+92,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+93,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+94,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+95,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+96,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+97,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+98,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+99,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+100,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+101,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+102,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+103,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+104,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+105,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+106,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+107,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+108,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+109,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+110,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+111,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+112,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+113,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+114,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+115,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+116,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+117,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+118,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+119,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+120,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+121,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+122,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+123,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+124,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+125,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+126,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+127,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+128,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+129,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+130,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+131,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+132,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+133,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+134,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+135,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+136,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+137,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+138,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+139,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+140,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+141,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+142,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+143,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+144,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+145,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+146,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+147,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+148,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+149,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+150,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+151,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+152,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+153,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+154,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+155,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+156,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+157,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+158,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+159,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+160,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+161,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+162,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+163,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+164,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+165,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+166,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+167,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+168,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+169,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+170,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+171,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+172,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+173,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+174,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+175,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+176,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+177,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+178,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+179,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+180,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+181,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+182,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+183,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+184,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+185,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+186,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+187,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+188,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+189,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+190,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+191,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+192,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+193,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+194,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+195,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+196,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+197,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+198,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+199,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+200,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+201,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+202,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+203,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+204,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+205,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+206,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+207,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+208,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+209,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+210,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+211,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+212,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+213,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+214,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+215,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+216,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+217,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+218,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+219,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+220,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+221,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+222,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+223,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+224,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+225,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+226,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+227,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+228,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+229,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+230,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+231,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+232,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+233,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+234,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+235,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+236,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+237,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+238,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+239,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+240,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+241,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+242,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+243,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+244,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+245,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+246,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+247,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+248,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+249,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+250,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+251,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+252,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+253,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+254,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+255,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+256,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+257,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+258,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+259,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+260,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+261,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+262,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+263,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+264,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+265,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+266,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+267,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+268,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+269,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+270,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+271,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+272,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+273,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+274,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+275,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+276,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+277,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+278,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+279,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+280,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+281,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+282,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+283,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+284,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+285,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+286,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+287,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+288,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+289,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+290,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+291,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+292,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+293,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+294,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+295,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+296,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+297,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+298,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+299,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+300,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+301,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+302,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+303,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+304,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+305,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+306,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+307,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+308,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+309,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+310,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+311,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+312,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+313,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+314,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+315,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+316,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+317,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+318,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+319,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+320,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+321,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+322,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+323,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+324,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+325,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+326,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+327,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+328,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+329,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+330,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+331,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+332,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+333,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+334,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+335,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+336,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+337,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+338,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+339,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+340,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+341,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+342,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+343,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+344,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+345,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+346,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+347,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+348,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+349,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+350,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+351,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+352,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+353,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+354,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+355,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+356,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+357,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+358,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+359,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+360,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+361,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+362,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+363,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+364,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+365,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+366,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+367,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+368,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+369,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+370,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+371,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+372,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+373,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+374,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+375,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+376,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+377,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+378,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+379,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+380,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+381,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+382,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+383,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+384,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+385,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+386,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+387,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+388,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+389,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+390,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+391,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+392,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+393,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+394,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+395,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+396,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+397,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+398,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+399,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+400,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+401,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+402,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+403,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+404,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+405,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+406,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+407,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+408,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+409,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+410,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+411,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+412,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+413,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+414,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+415,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+416,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+417,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+418,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+419,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+420,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+421,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+422,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+423,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+424,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+425,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+426,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+427,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+428,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+429,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+430,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+431,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+432,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+433,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+434,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+435,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+436,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+437,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+438,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+439,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+440,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+441,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+442,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+443,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+444,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+445,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+446,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+447,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+448,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+449,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+450,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+451,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+452,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+453,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+454,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+455,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+456,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+457,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+458,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+459,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+460,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+461,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+462,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+463,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+464,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+465,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+466,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+467,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+468,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+469,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+470,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+471,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+472,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+473,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+474,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+475,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+476,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+477,Headache and runny nose,Sar dard aur naak behna,Self-care,Common cold; self‑care at home
+478,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+479,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+480,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+481,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+482,Severe chest pain radiating to arm,Shadeed seene ka dard jo bazu tak ja raha hai,Emergency,Possible heart attack; emergency care
+483,Moderate fever and dehydration,Darmiyani bukhar aur pani ki kami,BHU Visit,Need medical check at BHU
+484,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+485,Sore throat and slight fever,Gale mein kharash aur halka bukhar,Self-care,Warm fluids and rest
+486,Severe abdominal pain and vomiting blood,Shadeed pait dard aur khoon ki ulti,Emergency,Emergency; possible internal bleeding
+487,Child with diarrhea and vomiting,Bachay ko dast aur ulti,BHU Visit,Risk of dehydration; BHU visit
+488,Skin rash and itching,Jild par kharish aur dana,Self-care,Apply topical ointment; monitor
+489,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+490,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+491,Joint pain and swelling,Joron mein dard aur sujan,BHU Visit,Evaluation at BHU
+492,Child with convulsions,Bachay ko fits,Emergency,Seizure; immediate emergency
+493,Persistent cough and weight loss,Lagataar khansi aur wazan kam hona,BHU Visit,Possible TB; visit BHU
+494,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+495,Pregnant woman with high blood pressure,Haml mein aurat ke khoon ka dabao zyada,BHU Visit,Prenatal check at BHU
+496,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
+497,Mild fever and cough,Halka bukhar aur khansi,Self-care,"Rest, hydration and over‑the‑counter medications"
+498,Mild stomach ache,Halka pait dard,Self-care,Light diet and rest
+499,High fever and difficulty breathing,Zyada bukhar aur saans lene mein mushkil,Emergency,Possible severe infection; go to emergency
+500,Uncontrolled bleeding after accident,Hadse ke baad khoon band nahi ho raha,Emergency,Stop bleeding and rush to emergency
